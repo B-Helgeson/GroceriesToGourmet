@@ -1,2 +1,0 @@
-## Place Team Notes Here:
-
