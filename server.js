@@ -3,7 +3,7 @@ const   express = require("express"),
         app = express(),
         PORT = process.env.PORT || 3000,
         exphbs = require("express-handlebars"),
-        routes = require("./controllers/todo_controller.js"),
+        routes = require("./controllers/controller.js"),
         db = require("./models");
 
     // app use functionality
