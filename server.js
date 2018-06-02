@@ -15,12 +15,12 @@ const   express = require("express"),
         app.set("view engine", "handlebars");
         app.use(routes); 
 
-    // starts the server
-        app.listen(PORT, function() {
-        console.log("App now listening at localhost:" + PORT);
-        });
+    // starts the server (disabled for sequelize below)
+        // app.listen(PORT, function() {
+        // console.log("App now listening at localhost:" + PORT);
+        // });
 
-// If Using Sequelize... 
-// db.sequelize
-//   .sync( { force: true} )
-//   .then(() => app.listen(PORT,() => console.log("App listening on PORT " + PORT )))
+    // If Using Sequelize... 
+        db.sequelize
+          .sync( { force: true} )
+          .then(() => app.listen(PORT,() => console.log("App listening on PORT " + PORT )))
