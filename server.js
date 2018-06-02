@@ -3,7 +3,7 @@ const   express = require("express"),
         bodyParser = require("body-parser"),
         app = express(),
         PORT = process.env.PORT || 3000,
-        exphbs = require("express-handlebars"),
+        // exphbs = require("express-handlebars"),
         routes = require("./controllers/controller.js");
         // db = require("./models");
 
@@ -11,8 +11,8 @@ const   express = require("express"),
         app.use(express.static("public"));
         app.use(bodyParser.urlencoded({ extended: true }));
         app.use(bodyParser.json());
-        app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-        app.set("view engine", "handlebars");
+        // app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+        // app.set("view engine", "handlebars");
         app.use(routes); 
 
     // starts the server (disabled for sequelize below)
