@@ -4,7 +4,7 @@ var router = express.Router();
 
 // Import the models to use their database functions.
 var shopping_list = require("../models/shopping_list.js"),
-    recipes = require("../models/recipes.js"),
+    recipes = require("../models/saved_recipes.js"),
     users = require("../models/users.js");
 
 // Create all our routes and set up logic within those routes where required.
