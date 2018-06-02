@@ -14,7 +14,7 @@ CREATE TABLE users (
     id int NOT NULL AUTO_INCREMENT,
     real_name varchar(30) NOT NULL,
     user_name varchar(30) NOT NULL,
-    user_id int NOT NULL,
+    user_id int NOT NULL,           
     password varchar(30) NOT NULL,
     PRIMARY KEY (id)
 );
@@ -28,3 +28,6 @@ CREATE TABLE shopping_list (
     units int NOT NULL,
     purchased varchar(30) NOT NULL
 );
+
+-- Seeds folder needed? -- 
+-- Server logic needed? -- 
