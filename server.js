@@ -9,14 +9,14 @@ const   express = require("express"),
         app.use(express.static("public"));
         app.use(bodyParser.urlencoded({ extended: true }));
         app.use(bodyParser.json());
-        app.use(routes); 
+        // app.use(routes); 
 
     // various route handling
-        require("./routes/html-routes.js")(app)
-        require("./routes/db-routes.js")(app)
-        require("./routes/api-routes.js")(app)
+        require("./routes/html-routes.js")(app);
+        require("./routes/db-routes.js")(app);
+        require("./routes/api-routes.js")(app);
 
     // starts the Sequelize server 
         db.sequelize
-          .sync( { force: true} )
+          .sync( { force: false} )
           .then(() => app.listen(PORT,() => console.log("App listening on PORT " + PORT )))
