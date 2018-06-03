@@ -1,3 +1,5 @@
+var Sequelize = require ("sequelize");
+
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
     // Giving the Users model a name of type STRING
@@ -15,6 +17,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     password: {
         type: Sequelize.STRING
+    },
+    uuid: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV1,
+      primaryKey: true
     }
   });
 
