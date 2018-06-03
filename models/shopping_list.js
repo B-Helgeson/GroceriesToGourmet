@@ -1,4 +1,6 @@
 // // Ingredients Model //
+var Sequelize = require ("sequelize");
+
 module.exports = function(sequelize, DataTypes) {
   var shopping_list = sequelize.define("shopping_list", {
     id: {
@@ -21,6 +23,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     purchased: {
       type: Sequelize.STRING
+    },
+    uuid: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV1,
+      primaryKey: true
     }
   });
 

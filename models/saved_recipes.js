@@ -1,4 +1,5 @@
 // // Recipes Model //
+var Sequelize = require ("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
   var saved_recipies = sequelize.define("saved_recipies", {
@@ -13,6 +14,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     user_id: {
         type: Sequelize.INTEGER
+    },
+    uuid: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV1,
+      primaryKey: true
     }
   });
 

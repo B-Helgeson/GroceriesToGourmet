@@ -7,7 +7,7 @@ module.exports = function(app) {
   // Each of the below routes handles the html pages the user gets sent to.
 
     app.get("/", function(req, res) {
-        res.render("login")
+        res.render("index")
     })
 
     app.get("/loggedin", function(req, res) {
