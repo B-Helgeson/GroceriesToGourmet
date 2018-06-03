@@ -20,9 +20,13 @@
   "homepage": "https://github.com/B-Helgeson/GroceriesToGourmet#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
     "mysql": "^2.15.0",
     "path": "^0.12.7",
+    "req-flash": "0.0.3",
     "sequelize": "^4.37.10"
   }
 }
