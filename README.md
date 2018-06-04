@@ -39,14 +39,14 @@ Express, Handlebars, Heroku, Javascript, MySql, Node, Sequel Pro
 
 * [![alt text][1.1]][1] Javascript </br>
 * [![alt text][2.1]][2] jQuery </br>
-* [![alt text][3.1]][3] json </br>
-* [![alt text][4.1]][4] ajax </br>
+* [![alt text][3.1]][3] JSON </br>
+* [![alt text][4.1]][4] AJAX </br>
 * [![alt text][5.1]][5] Nodejs </br>
 * [![alt text][6.1]][6] Express </br>
 * [![alt text][7.1]][7] Handlebars </br>
 * [![alt text][8.1]][8] Heroku </br>
 * [![alt text][9.1]][9] Sequelize </br>
-* [![alt text][10.1]][10] SqlPro </br>
+* [![alt text][10.1]][10] Sequel Pro </br>
 
 [1]: https://www.javascript.com/
 [2]: https://jquery.com
