@@ -32,12 +32,8 @@ UCF Group Project
 
 
 
-# ReadMe
-
-created according to MVC architectural pattern using the following tools:
-
-Express, Handlebars, Heroku, Javascript, MySql, Node, Sequel Pro  
-
+Created according to MVC architectural pattern using the following technologies: </br>
+</br>
 * [![alt text][1.1]][1] Javascript </br>
 * [![alt text][2.1]][2] jQuery </br>
 * [![alt text][3.1]][3] JSON </br>
