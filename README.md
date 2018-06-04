@@ -16,9 +16,6 @@ UCF Group Project
 
 ## Technologies Utilized
 
-* [npm express](https://www.npmjs.com/package/express) </br>
-* [jQuery](https://jquery.com/) </br>
-
 <!-- icons -->
 
 [1.1]: /icons/javascript.png
@@ -40,16 +37,16 @@ created according to MVC architectural pattern using the following tools:
 
 Express, Handlebars, Heroku, Javascript, MySql, Node, Sequel Pro  
 
-[![alt text][1.1]][1]
-[![alt text][2.1]][2]
-[![alt text][3.1]][3]
-[![alt text][4.1]][4]
-[![alt text][5.1]][5]
-[![alt text][6.1]][6]
-[![alt text][7.1]][7]
-[![alt text][8.1]][8]
-[![alt text][9.1]][9]
-[![alt text][10.1]][10]
+* [![alt text][1.1]][1] Javascript </br>
+* [![alt text][2.1]][2] jQuery </br>
+* [![alt text][3.1]][3] json </br>
+* [![alt text][4.1]][4] ajax </br>
+* [![alt text][5.1]][5] Nodejs </br>
+* [![alt text][6.1]][6] Express </br>
+* [![alt text][7.1]][7] Handlebars </br>
+* [![alt text][8.1]][8] Heroku </br>
+* [![alt text][9.1]][9] Sequelize </br>
+* [![alt text][10.1]][10] SqlPro </br>
 
 [1]: https://www.javascript.com/
 [2]: https://jquery.com
