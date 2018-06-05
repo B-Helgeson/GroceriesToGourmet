@@ -18,17 +18,17 @@ UCF Group Project
 
 <!-- icons -->
 
-[1.1]: /icons/javascript.png
-[2.1]: /icons/jquery.png
-[3.1]: /icons/json.png
-[4.1]: /icons/ajax.png
-[5.1]: /icons/nodejs.png
-[6.1]: /icons/express.png
-[7.1]: /icons/handlebars-js.png
-[8.1]: /icons/heroku.png
-[9.1]: /icons/sequelize.png
-[10.1]: /icons/sqlpro.png
-[11.1]: /icons/spectre.png
+[1.1]: /public/assets/icons/javascript.png
+[2.1]: /public/assets/icons/jquery.png
+[3.1]: /public/assets/icons/json.png
+[4.1]: /public/assets/icons/ajax.png
+[5.1]: /public/assets/icons/nodejs.png
+[6.1]: /public/assets/icons/express.png
+[7.1]: /public/assets/icons/handlebars-js.png
+[8.1]: /public/assets/icons/heroku.png
+[9.1]: /public/assets/icons/sequelize.png
+[10.1]: /public/assets/icons/sqlpro.png
+[11.1]: /public/assets/icons/spectre.png
 
 
 
