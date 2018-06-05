@@ -2,7 +2,7 @@
 var Sequelize = require ("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
-  var saved_recipies = sequelize.define("saved_recipies", {
+  var saved_recipes = sequelize.define("saved_recipes", {
     id: {
       type: Sequelize.INTEGER
     },
@@ -22,17 +22,17 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  saved_recipies.associate = function(models) {
-    // We're saying that a saved_recipies should belong to an User
-    // A saved_recipies can't be created without an User due to the foreign key constraint
-    saved_recipies.belongsTo(models.User, {
+  saved_recipes.associate = function(models) {
+    // We're saying that a saved_recipes should belong to an User
+    // A saved_recipes can't be created without an User due to the foreign key constraint
+    saved_recipes.belongsTo(models.User, {
       foreignKey: {
         allowNull: false
       }
     });
   };
 
-  return saved_recipies;
+  return saved_recipes;
 };
 
 
