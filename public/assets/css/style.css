@@ -36,3 +36,9 @@
             margin-bottom: 0;
             font-weight: 300;
         }
+
+        .heroImg {
+            /* max-height:150px; */
+            width: 80%;
+            position: center;
+        }
