@@ -26,17 +26,17 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   User.associate = function(models) {
-    // Associating User with saved_recipies
+    // Associating User with saved_recipes
     // When a User is deleted, also delete any associated Posts
-    User.hasMany(models.saved_recipies, {
+    User.hasMany(models.saved_recipes, {
       onDelete: "cascade"
     });
   };
 
   User.associate = function(models) {
-    // Associating User with saved_recipies
+    // Associating User with saved_recipes
     // When a User is deleted, also delete any associated Posts
-    User.hasMany(models.saved_recipies, {
+    User.hasMany(models.saved_recipes, {
       onDelete: "cascade"
     });
   };
