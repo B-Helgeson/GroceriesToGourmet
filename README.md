@@ -35,13 +35,11 @@ UCF Group Project
 Created according to MVC architectural pattern using the following technologies: </br>
 </br>
 
-| [![alt text][1.1]][1] Javascript | [![alt text][2.1]][2] jQuery |
-| ---- | ----|
-| [![alt text][3.1]][3] JSON | [![alt text][4.1]][4] AJAX |
-| [![alt text][5.1]][5] Nodejs | [![alt text][6.1]][6] Express |
-| [![alt text][7.1]][7] Handlebars | [![alt text][8.1]][8] Heroku |
-| [![alt text][9.1]][9] Sequelize | [![alt text][10.1]][10] Sequel Pro |
-| [![alt text][11.1]][11] Spectre CSS |
+| [![alt text][1.1]][1] Javascript | [![alt text][2.1]][2] jQuery | [![alt text][3.1]][3] JSON |
+| ---- | ---- | ---- |
+| [![alt text][4.1]][4] AJAX | [![alt text][5.1]][5] Nodejs | [![alt text][6.1]][6] Express |
+| [![alt text][7.1]][7] Handlebars | [![alt text][8.1]][8] Heroku | [![alt text][9.1]][9] Sequelize |
+| [![alt text][10.1]][10] Sequel Pro | [![alt text][11.1]][11] Spectre CSS |
 
 [1]: https://www.javascript.com/
 [2]: https://jquery.com
