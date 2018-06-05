@@ -34,6 +34,7 @@ UCF Group Project
 
 Created according to MVC architectural pattern using the following technologies: </br>
 </br>
+
 | [![alt text][1.1]][1] Javascript | [![alt text][2.1]][2] jQuery |
 | [![alt text][3.1]][3] JSON | [![alt text][4.1]][4] AJAX |
 | [![alt text][5.1]][5] Nodejs | [![alt text][6.1]][6] Express |
