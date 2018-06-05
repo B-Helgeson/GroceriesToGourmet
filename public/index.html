@@ -8,9 +8,14 @@
 		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
         <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
         <!-- Custom CSS File -->
+<<<<<<< HEAD
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
   </head>
   <!--All these HTML pages need a uniform header menu-->
+=======
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	</head>
+>>>>>>> 4a028e55ad07b0ab6166c3515ee36b684a10c6f1
 	<body>
         
         <h1>Login Page</h1>
@@ -20,35 +25,59 @@
         <!-- Panel to contain login form... -->
         <div class="panel">
             <div class="panel-header">
-              <div class="panel-title">Comments</div>
+              <div class="panel-title">Log In</div>
             </div>
             <div class="panel-nav">
-              <!-- navigation components: tabs, breadcrumbs or pagination -->
             </div>
             <div class="panel-body">
-              <!-- contents -->
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <div class="col-3 col-sm-12">
+                    <label class="form-label" for="userName">User Name</label>
+                  </div>
+                  <div class="col-9 col-sm-12">
+                    <input class="form-input" type="text" id="input-username" placeholder="User Name">
+                  </div>
+                  <div class="col-3 col-sm-12">
+                    <label class="form-label" for="userPassword">Password</label>
+                  </div>
+                  <div class="col-9 col-sm-12">
+                    <input class="form-input" type="password" id="input-password" placeholder="...">
+                  </div>
+                </div>
+              </form>
             </div>
             <div class="panel-footer">
-              <!-- buttons or inputs -->
+                <button class="btn btn-primary input-group-btn">Submit</button>
             </div>
           </div>
 
-        <!-- Form to Login -->
-        <form class="form-horizontal">
-            <div class="form-group">
-              <div class="col-3 col-sm-12">
-                <label class="form-label" for="input-example-1">Name</label>
-              </div>
-              <div class="col-9 col-sm-12">
-                <input class="form-input" type="text" id="input-example-1" placeholder="Name">
+
+            
+            <!-- Link to open the modal -->
+            <button class="btn btn-primary input-group-btn" id="showModal">Create Account</button>
+    
+          <!-- Create account modal -->
+          <div class="modal inactive" id="modal-1">
+              <a href="#close" class="modal-overlay" aria-label="Close"></a>
+              <div class="modal-container">
+                <div class="modal-header">
+                  <a href="#close" class="btn btn-clear float-right" aria-label="Close"></a>
+                  <div class="modal-title h5">Modal title</div>
+                </div>
+                <div class="modal-body">
+                  <div class="content">
+                    <!-- content here -->
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  ...
+                </div>
               </div>
               <div>
                 <!--Shouldn't there be a password blank here?-->
               </div>
             </div>
-          </form>
-    
-
 
 
 
