@@ -13,7 +13,7 @@ exports.signup = function(req, res){
   
         var query = db.query(sql, function(err, result) {
   
-           message = "Succesfully! Your account has been created.";
+           message = "You have signed up succesfully! Your account has been created.";
            res.render('signup.ejs',{message: message});
         });
  
