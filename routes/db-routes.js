@@ -8,9 +8,9 @@ const db = require("../models")
 module.exports = function(app) {
 
     app.get("/", function(req, res) {
-        users.all(function(data) {
+        user.all(function(data) {
           var hbsObject = {
-            users: data
+            user: data
           };
           console.log(hbsObject);
           res.render("index", hbsObject);
@@ -20,11 +20,15 @@ module.exports = function(app) {
       // Create a user //
       app.post("/api/users", function(req, res) {
           // Return results // 
+        db.user.create(req.body).then(function(hbsObject) {
+          res.json(hbsObject);
+          });
       });
       
       // Update a user //
       app.put("/api/users/:id", function(req, res) {
       // Update info //
+      
       });
       
       // ------------------------------------------------------------------------- //
@@ -74,3 +78,7 @@ module.exports = function(app) {
       });
       
     }
+
+    // ------------------------------------------------------------------- //
+
+    
