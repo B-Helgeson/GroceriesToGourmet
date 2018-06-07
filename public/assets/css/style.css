@@ -42,7 +42,7 @@
         }
 
         .hero-image {
-            background-image: url("shoppinghero.jpg");
+            background-image: url("./assets\img\shoppingHero.jpg");
             height: 50%;
             background-position: center;
             background-repeat: no-repeat;
