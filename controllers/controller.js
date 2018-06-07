@@ -1,3 +1,6 @@
+// Requiring the DB and requiring a model //
+
+
 var express = require("express");
 
 var router = express.Router();
@@ -9,6 +12,8 @@ var db = require("../models");
 //     users = require("../models/users.js");
 
 // Create all our routes and set up logic within those routes where required.
+
+
 
 // Get users //
 router.get("/", function(req, res) {

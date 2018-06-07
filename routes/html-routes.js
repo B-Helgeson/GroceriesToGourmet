@@ -1,5 +1,6 @@
 // This file contains the routing to various html pages
 
+// COULD BE CLEANER USING HANDLEBARS // 
 var path = require("path");
 
 module.exports = function(app) {

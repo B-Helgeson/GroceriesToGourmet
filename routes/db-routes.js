@@ -1,5 +1,7 @@
 // db-routes.js - provides "api" routing to the database functionality
 
+// PUT IN THE CONTROLLER // 
+
 // Requiring our models
 const db = require("../models")
 
