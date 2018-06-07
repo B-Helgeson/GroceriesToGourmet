@@ -1,7 +1,6 @@
+$( document ).ready(function() { // begin "document ready" function
 // File to contain jQuery for front-end javascript
 //---------------------------------------------------------
-$( document ).ready(function() { // begin "document ready" function
-
 
 
 // Modal Control
@@ -13,7 +12,6 @@ $(".close-modal").on("click", function() {
 $("#showModal").on("click", function() {
   $('#modal-1').addClass('active');
 });
-
 
 
 

@@ -18,5 +18,5 @@ const   express = require("express"),
 
     // starts the Sequelize server 
         db.sequelize
-          .sync( { force: false} )
+          .sync( { force: true} )
           .then(() => app.listen(PORT,() => console.log("App listening on PORT " + PORT )))

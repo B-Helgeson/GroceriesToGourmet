@@ -4,7 +4,7 @@
 const db = require("../models")
 
 // Routes
-// =============================================================
+
 module.exports = function(app) {
 
     app.get("/", function(req, res) {
@@ -16,12 +16,19 @@ module.exports = function(app) {
           res.render("index", hbsObject);
         });
       });
+
+/// USER Related DB Functionality
+// =======================================================================
       
-      // Create a user //
+      // Create a user - this functionality works! Requires a model like this: 
+      
+      /*  {"real_name":"Brandon Helgeson",
+          "user_name":"Chef Brandon",
+          "password":"123"}   */
+
       app.post("/api/users", function(req, res) {
-          // Return results // 
-        db.user.create(req.body).then(function(hbsObject) {
-          res.json(hbsObject);
+        db.User.create(req.body).then(function(dbUser) {
+          res.json(dbUser);
           });
       });
       
@@ -30,8 +37,18 @@ module.exports = function(app) {
       // Update info //
       
       });
+
+      app.get("/api/users", function(req, res) {
+        db.User.findAll(
+          //{include: [db.saved_recipes]}
+      ).then(function(dbUsers) {
+          res.json(dbUsers);
+        });
+      });
       
-      // ------------------------------------------------------------------------- //
+
+// RECIPE Related DB Functionality
+// ==============================================================================
       
       // Get recipes //
       app.get("/", function(req, res) {
@@ -54,7 +71,8 @@ module.exports = function(app) {
       // Update info // 
       });
       
-      // ------------------------------------------------------------------------- //
+// SHOPPING LIST Related DB Functionality
+// ==============================================================================
       
       // Get shopping list //
       app.get("/", function(req, res) {
@@ -76,9 +94,9 @@ module.exports = function(app) {
       app.put("/api/shopping_list/:id", function(req, res) {
       // Update info // 
       });
-      
-    }
 
-    // ------------------------------------------------------------------- //
+
+//=====================================================================
+    } // End of Module Exports Function
 
     
