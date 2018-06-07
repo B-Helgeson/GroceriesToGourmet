@@ -3,6 +3,7 @@ const   express = require("express"),
         bodyParser = require("body-parser"),
         morgan = require("morgan"),
         cookieParser = require("cookie-parser"),
+        session = require('express-session'),
         app = express(),
         PORT = process.env.PORT || 3000,
         db = require("./models"),
@@ -16,6 +17,7 @@ const   express = require("express"),
         app.use(morgan('dev'));
         app.use(cookieParser());
 
+    
 // starts the Sequelize server 
         db.sequelize
           .sync( { force: true} )
