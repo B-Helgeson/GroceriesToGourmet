@@ -1,4 +1,14 @@
-Application ID06ea8989Application Keysc55ce74997d120adad548639c6269576
+Application ID
+06ea8989
+
+Application Keys
+c55ce74997d120adad548639c6269576
 
 API call for 15 random recipes
-http://api.yummly.com/v1/api/recipes?_app_id=06ea8989&_app_key=c55ce74997d120adad548639c6269576&q=&requirePictures=true&maxResult=15&start=15API call for recipe for meatloafhttp://api.yummly.com/v1/api/recipes?_app_id=06ea8989&_app_key=c55ce74997d120adad548639c6269576&q=meatloaf&requirePictures=true&maxResult=15&start=15API get call for individual, specific recipehttp://api.yummly.com/v1/api/recipe/Eggs-in-hash-brown-nests-352693?_app_id=06ea8989&_app_key=c55ce74997d120adad548639c6269576
+http://api.yummly.com/v1/api/recipes?_app_id=06ea8989&_app_key=c55ce74997d120adad548639c6269576&q=&requirePictures=true&maxResult=15&start=15
+
+API call for recipe for meatloaf
+http://api.yummly.com/v1/api/recipes?_app_id=06ea8989&_app_key=c55ce74997d120adad548639c6269576&q=meatloaf&requirePictures=true&maxResult=15&start=15
+
+API get call for individual, specific recipe
+http://api.yummly.com/v1/api/recipe/Eggs-in-hash-brown-nests-352693?_app_id=06ea8989&_app_key=c55ce74997d120adad548639c6269576
