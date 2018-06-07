@@ -12,18 +12,18 @@ module.exports = function(sequelize, DataTypes) {
       type: Sequelize.STRING,
       allowNull: false
   }
-}, {
-  hooks: {
-    beforeCreate: (User) => {
-      const salt = bcrypt.genSaltSync();
-      User.password = bcrypt.hashSync(User.password, salt);
-    }
-  },
-  instanceMethods: {
-    validPassword: function(password) {
-      return bcrypt.compareSync(password, this.password);
-    }
-  }    
+// }, {
+//   hooks: {
+//     beforeCreate: (User) => {
+//       const salt = bcrypt.genSaltSync();
+//       User.password = bcrypt.hashSync(User.password, salt);
+//     }
+//   },
+//   instanceMethods: {
+//     validPassword: function(password) {
+//       return bcrypt.compareSync(password, this.password);
+//     }
+//   }    
 });
 
   User.associate = function(models) {
