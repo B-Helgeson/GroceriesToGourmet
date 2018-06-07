@@ -42,3 +42,12 @@
             width: 80%;
             position: center;
         }
+
+        .hero-image {
+            background-image: url("shoppinghero.jpg");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+          }
