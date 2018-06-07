@@ -1,7 +1,7 @@
 $( document ).ready(function() { // begin "document ready" function
-// File to contain jQuery for front-end javascript
-//---------------------------------------------------------
 
+// Front-End Display Related Javascript
+//=================================================================
 
 // Modal Control
 
@@ -13,15 +13,26 @@ $("#showModal").on("click", function() {
   $('#modal-1').addClass('active');
 });
 
-// User Login Functionality
+
+
+// User Auth Functionality
 //==========================================================================
+
+// Log IN
 $("#userLogin").on("click", function(){
   var username = $("#login-name").val();
   var password = $("#login-password").val();
-  console.log("username:"+username+"       password:"+password);
+  console.log("Login Info - username:"+username+"       password:"+password);
 })
 
-
+// Create Account
+$("#NewAcctSub").on("click", function(){
+  let realName = $("#create-realname").val();
+  let userName = $("#create-username").val();
+  let password = $("#create-password").val();
+  let passVer = $("#verify-password").val();
+  console.log("New Acct Info - username:"+userName+"       password:"+password);
+})
 
 // Get Recipes API Call and Painting the Page w/results...
 // =========================================================================
