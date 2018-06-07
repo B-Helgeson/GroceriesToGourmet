@@ -2,29 +2,31 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <title>Groceries to Gourmet</title>
-        <!-- Linking to Spectre CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-        <!-- Custom CSS File -->
-        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <meta charset="UTF-8">
+    <title>Groceries to Gourmet</title>
+    <!-- Linking to Spectre CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
 </head>
 
 <body>
-        <!-- After a User Logs In -->
+    <!-- After a User Logs In -->
+    <img class="heroImg" src="assets\img\mainHero.jpg" alt="Groceries">
+    <!-- Nav Bar -->
+    <header class="navbar">
+        <div class="hero-image">
+            <!-- Hero Image  -->
 
-        <!-- Nav Bar -->
-        <header class="navbar">
-                <div class="hero-image">
-                        <div class="hero-text">
-                                <h1>I am John Doe</h1>
-                                <p>And I'm a Photographer</p>
-                                <button>Hire me</button>
-                        </div>
-                </div>
-                <!-- <section class="navbar-section">
+            <div class="hero-text">
+                <h1>Welcome, (name of the user to be inserted dynamically).</h1>
+                <p>And I'm a Photographer</p>
+                <button>Create Grocery List</button>
+            </div>
+        </div>
+        <!-- <section class="navbar-section">
                         <a href="#" class="btn btn-link">Recipes</a>
                         <a href="#" class="btn btn-link">My Saved Lists</a>
                 </section>
@@ -35,107 +37,118 @@
                         <a href="#" class="btn btn-link">My Profile</a>
                         <a href="#" class="btn btn-link">About</a>
                 </section> -->
-        </header>
+    </header>
 
-        </br>
-        <!-- Adding page breaks for white space, for now -->
-        </br>
-
-
-        <!-- <h2>My Recipes</h2> -->
-        <!-- Commented out this section for now, as "my recepies should be on the user/profile page" -->
-        <!-- <div> -->
-        <!--User's recipes-->
-        <!-- </div> -->
+    </br>
+    <!-- Adding page breaks for white space, for now -->
+    </br>
 
 
-        <h2>Trending Recipes</h2>
+    <!-- <h2>My Recipes</h2> -->
+    <!-- Commented out this section for now, as "my recepies should be on the user/profile page" -->
+    <!-- <div> -->
+    <!--User's recipes-->
+    <!-- </div> -->
 
-        <div>
-                <ol>
-                        <!--Connection to API/dynamic data-->
-                </ol>
+
+    <h2>Trending Recipes</h2>
+
+    <div>
+        <ol>
+            <!--Connection to API/dynamic data-->
+        </ol>
+    </div>
+
+    <!-- Sample Recipe Images for now, to be dynamically generated -->
+
+    <button id="getRecipes">Get Recipes</button>
+    <!-- Button to "getRecipes" for now, this will be removed later and replaced with an "on page load" function -->
+
+    <div class="card">
+        <div class="col-3" id="recipeDiv">
+            <!-- Card 1 -->
+            <div class="card-image">
+                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
+            </div>
+            <div class="card-header">
+                <div class="card-title h5">Microsoft</div>
+                <div class="card-subtitle text-gray">Software and hardware</div>
+            </div>
+            <div class="card-body">
+                Empower every person and every organization on the planet to achieve more.
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-image">
+                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
+            </div>
+            <div class="card-header">
+                <div class="card-title h5">Microsoft</div>
+                <div class="card-subtitle text-gray">Software and hardware</div>
+            </div>
+            <div class="card-body">
+                Empower every person and every organization on the planet to achieve more.
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-image">
+                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
+            </div>
+            <div class="card-header">
+                <div class="card-title h5">Microsoft</div>
+                <div class="card-subtitle text-gray">Software and hardware</div>
+            </div>
+            <div class="card-body">
+                Empower every person and every organization on the planet to achieve more.
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card-image">
+                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
+            </div>
+            <div class="card-header">
+                <div class="card-title h5">Microsoft</div>
+                <div class="card-subtitle text-gray">Software and hardware</div>
+            </div>
+            <div class="card-body">
+                Empower every person and every organization on the planet to achieve more.
+            </div>
         </div>
+    </div>
 
-        <!-- Sample Recipe Images for now, to be dynamically generated -->
 
-        <button id="getRecipes">Get Recipes</button>
-        <!-- Button to "getRecipes" for now, this will be removed later and replaced with an "on page load" function -->
+    <!-- Button to create the Shopping List -->
 
-        <div class="card">
-                <div class="col-3" id="recipeDiv">
-                        <!-- Card 1 -->
-                        <div class="card-image">
-                                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-                        </div>
-                        <div class="card-header">
-                                <div class="card-title h5">Microsoft</div>
-                                <div class="card-subtitle text-gray">Software and hardware</div>
-                        </div>
-                        <div class="card-body">
-                                Empower every person and every organization on the planet to achieve more.
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="card-image">
-                                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-                        </div>
-                        <div class="card-header">
-                                <div class="card-title h5">Microsoft</div>
-                                <div class="card-subtitle text-gray">Software and hardware</div>
-                        </div>
-                        <div class="card-body">
-                                Empower every person and every organization on the planet to achieve more.
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="card-image">
-                                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-                        </div>
-                        <div class="card-header">
-                                <div class="card-title h5">Microsoft</div>
-                                <div class="card-subtitle text-gray">Software and hardware</div>
-                        </div>
-                        <div class="card-body">
-                                Empower every person and every organization on the planet to achieve more.
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div class="card-image">
-                                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-                        </div>
-                        <div class="card-header">
-                                <div class="card-title h5">Microsoft</div>
-                                <div class="card-subtitle text-gray">Software and hardware</div>
-                        </div>
-                        <div class="card-body">
-                                Empower every person and every organization on the planet to achieve more.
-                        </div>
+    <div class="popover col-5">
+        <button class="btn btn-primary col-5">Create Grocery List</button>
+        <div class="popover-container">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Shopping List</strong>
                 </div>
-        </div>
-
-
-        <!-- Button to create the Shopping List -->
-
-        <div class="popover col-5">
-                <button class="btn btn-primary col-5">Create Grocery List</button>
-                <div class="popover-container">
-                        <div class="card">
-                                <div class="card-header">
-                                        <strong>Shopping List</strong>
-                                </div>
-                                <div class="card-body">
-                                        Once you're satisfied with your selected recipes, click this botton to create your custom shopping list!
-                                </div>
-                        </div>
+                <div class="card-body">
+                    Once you're satisfied with your selected recipes, click this botton to create your custom shopping list!
                 </div>
+            </div>
         </div>
+    </div>
 
 
-        <!-- Linking to JQuery CDN -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <!-- Custom JavaScript File -->
-        <script src="assets/js/script.js"></script>
+    <!-- Linking to JQuery CDN -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Custom JavaScript File -->
+    <script src="public/assets/js/script.js"></script>
 </body>
 
 </html>
+
+<style>
+    .heroImg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* Preserve aspet ratio */
+        min-width: 100%;
+        z-index: -2;
+    }
+</style>

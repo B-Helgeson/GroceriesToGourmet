@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Groceries to Gourmet</title>
+    <title>From Groceries to Gourmet</title>
     <!-- Linking to Spectre CSS -->
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
@@ -20,9 +20,11 @@
 
 
 
-    <h1>Login Page</h1>
+    <h1>Welcome!</h1>
     <!-- Login page is the first page the user finds -->
-
+    <p>We know that grocery shopping can be time consuming. You have to plan your meals, research recipes, comb through those recipes and make sure that each ingredient is on your list. From Groceries to Gourmet wants to make that easier for you. We provide
+        a selection of delicious recipes for you to choose from and then create a personally tailored grocery list based off of your selections. Simply add any addition items that you may need or delete items that you already have and you're ready to
+        go. Please create an account below to get started.</p>
     <div class="container onTopOfHeroImage">
 
         <div class="form-group">
@@ -96,16 +98,13 @@
                 ...
             </div>
         </div>
-        <div>
-            <!--Shouldn't there be a password blank here?-->
-        </div>
     </div>
 
 
 
 
-  
-  
+
+
 
     <!-- Linking to JQuery CDN -->
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -124,7 +123,6 @@
         min-width: 100%;
         z-index: -2;
     }
-    
     /* .panel {} */
     
     .onTopOfHeroImage {
@@ -134,6 +132,12 @@
     
     h1 {
         text-shadow: 1px 1px 1px blue;
+        text-emphasis: bold;
+    }
+    
+    p {
+        text-decoration-color: 1px 1px 1px black;
+        text-emphasis: bold;
     }
     
     .formLabel {
@@ -160,4 +164,3 @@
         }
     }
 </style>
-
