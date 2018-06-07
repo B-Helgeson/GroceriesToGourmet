@@ -1,3 +1,6 @@
+// Requiring the DB and requiring a model //
+
+
 var express = require("express");
 const db = require("../models");
 var router = express.Router();
@@ -7,6 +10,12 @@ var path = require("path");
 // HTML Routing Functionality
 //======================================================================
 
+<<<<<<< HEAD
+=======
+
+
+// Get users //
+>>>>>>> christopher
 router.get("/", function(req, res) {
   // res.render("index")
   res.sendFile( path.join(__dirname, "../public/index.html"))
