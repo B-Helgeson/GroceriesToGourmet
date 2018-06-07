@@ -6,7 +6,7 @@ const   express = require("express"),
         db = require("./models");
 
     // app use functionality
-        //app.use(express.static("public"));
+        app.use(express.static("public")); //required to properly handle css/js routing in public. 
         app.use(bodyParser.urlencoded({ extended: true }));
         app.use(bodyParser.json());
         // app.use(routes); 
