@@ -13,9 +13,18 @@ $("#showModal").on("click", function() {
   $('#modal-1').addClass('active');
 });
 
+// User Login Functionality
+//==========================================================================
+$("#userLogin").on("click", function(){
+  var username = $("#login-name").val();
+  var password = $("#login-password").val();
+  console.log("username:"+username+"       password:"+password);
+})
 
 
-// Get Recipes API Call and Painting the Page w/results... 
+
+// Get Recipes API Call and Painting the Page w/results...
+// =========================================================================
 
 $("#getRecipes").on("click", function() {
   $("#recipeDiv").empty();
@@ -84,5 +93,5 @@ $("#getRecipes").on("click", function() {
 */
 
 
-
+//==========================================================================================
 }); // End of "Document Ready" function

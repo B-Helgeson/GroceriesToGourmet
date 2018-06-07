@@ -3,27 +3,6 @@ const db = require("../models");
 var router = express.Router();
 var path = require("path");
 
-// Import the models to use their database functions.
-// var db = require("../models");
-// var shopping_list = require("../models/shopping_list.js"),
-//     recipes = require("../models/saved_recipes.js"),
-//     users = require("../models/user.js");
-
-// Create all our routes and set up logic within those routes where required.
-// DB Routing Functionality
-// ===========================================================
-
-// router.get("/", function(req, res) {
-//   users.all(function(data) {
-//     var hbsObject = {
-//       user: data
-//     };
-//     console.log(hbsObject);
-//     res.render("index", hbsObject);
-//   });
-// });
-
-
 
 // HTML Routing Functionality
 //======================================================================
@@ -104,6 +83,10 @@ router.post("/api/saved_recipes", function(req, res) {
 router.put("/api/saved_recipes/:id", function(req, res) {
 // Update info // 
 });
+
+
+
+
 
 // SHOPPING LIST Related DB Functionality
 // ==============================================================================
