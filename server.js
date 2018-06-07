@@ -6,18 +6,11 @@ const   express = require("express"),
         db = require("./models"),
         routes = require("./controllers/controller.js");
 
-app.use(routes);
-
 // app use functionality
         app.use(express.static("public")); //required to properly handle css/js routing in public. 
         app.use(bodyParser.urlencoded({ extended: true }));
         app.use(bodyParser.json());
         app.use(routes); 
-
-// // various route handling
-//         require("./routes/html-routes.js")(app);
-//         require("./routes/db-routes.js")(app);
-//         require("./routes/api-routes.js")(app);
 
 // starts the Sequelize server 
         db.sequelize
