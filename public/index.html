@@ -1,131 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-        <title>Groceries to Gourmet</title>
-        <!-- Linking to Spectre CSS -->
-		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-        <!-- Custom CSS File -->
-		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  </head>
-  
-	<body>
-        
-      <!-- Hero Image of Groceries -->
-      <img class="heroImg" src="\assets\img\groceriesHero.jpg" alt="Groceries">
+    <title>Groceries to Gourmet</title>
+    <!-- Linking to Spectre CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+
+    <!-- Hero Image of Groceries -->
+    <img class="heroImg" src="assets\img\groceriesHero.jpg" alt="Groceries">
 
 
 
-        <h1>Login Page</h1>
-        <!-- Login page is the first page the user finds -->
+
+    <h1>Login Page</h1>
+    <!-- Login page is the first page the user finds -->
+
+    <div class="container onTopOfHeroImage">
+
+        <div class="form-group">
+            <label class="form-label formLabel" for="name">Name</label>
+            <input class="form-input" type="text" id="name" placeholder="Name">
+
+            <label class="form-label formLabel" for="password">password</label>
+            <input class="form-input" type="password" id="password" placeholder="password">
+        </div>
 
 
-        <!-- Panel to contain login form... -->
-        <div class="panel">
-            <div class="panel-header">
-              <div class="panel-title">Log In</div>
+    </div>
+
+    <br />
+
+    <!-- Link to open the modal -->
+    <div class="buttonWrapper">
+        <button class="btn btn-primary" id="showModal">Create Account</button>
+    </div>
+
+    <!-- Create account modal -->
+    <div class="modal inactive" id="modal-1">
+        <a href="#close" class="modal-overlay" aria-label="Close"></a>
+        <div class="modal-container">
+            <div class="modal-header">
+                <a href="#close" class="close-modal btn btn-clear float-right" aria-label="Close"></a>
+                <div class="modal-title h5"><strong>Create Account</strong></div>
             </div>
-            <div class="panel-nav">
-            </div>
-            <div class="panel-body">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <div class="col-3 col-sm-12">
-                    <label class="form-label" for="userName">User Name</label>
-                  </div>
-                  <div class="col-9 col-sm-12">
-                    <input class="form-input" type="text" id="input-username" placeholder="User Name">
-                  </div>
-                  <div class="col-3 col-sm-12">
-                    <label class="form-label" for="userPassword">Password</label>
-                  </div>
-                  <div class="col-9 col-sm-12">
-                    <input class="form-input" type="password" id="input-password" placeholder="...">
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="panel-footer">
-                <button class="btn btn-primary input-group-btn">Submit</button>
-            </div>
-          </div>
-
-
-            
-            <!-- Link to open the modal -->
-            <button class="btn btn-primary input-group-btn" id="showModal">Create Account</button>
-    
-          <!-- Create account modal -->
-          <div class="modal inactive" id="modal-1">
-              <a href="#close" class="modal-overlay" aria-label="Close"></a>
-              <div class="modal-container">
-                <div class="modal-header">
-                  <a href="#close" class="close-modal btn btn-clear float-right" aria-label="Close"></a>
-                  <div class="modal-title h5"><strong>Create Account</strong></div>
-                </div>
-                <div class="modal-body">
-                  <div class="content">
+            <div class="modal-body">
+                <div class="content">
                     <div class="panel">
-                      <div class="panel-nav">
-                      </div>
-                      <div class="panel-body">
-                        <form class="form-horizontal">
-                          <div class="form-group">
-                            <div class="col-4 col-sm-12">
-                              <label class="form-label" for="userName">Name</label>
-                            </div>
-                            <div class="col-8 col-sm-12">
-                              <input class="form-input" type="text" id="new-input-name" placeholder="Name">
-                            </div>
-                            <div class="col-4 col-sm-12">
-                              <label class="form-label" for="userName">User Name</label>
-                            </div>
-                            <div class="col-8 col-sm-12">
-                              <input class="form-input" type="text" id="new-input-username" placeholder="User Name">
-                            </div>
-                            <div class="col-4 col-sm-12">
-                              <label class="form-label" for="userPassword">Password</label>
-                            </div>
-                            <div class="col-8 col-sm-12">
-                              <input class="form-input" type="password" id="new-input-password" placeholder="...">
-                            </div>
-                            <div class="col-4 col-sm-12">
-                              <label class="form-label" for="userPassword">Verify Password</label>
-                            </div>
-                            <div class="col-8 col-sm-12">
-                              <input class="form-input" type="password" id="new-verify-password" placeholder="...">
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="panel-footer">
-                          <button class="btn btn-primary input-group-btn">Submit</button>
-                      </div>
+                        <div class="panel-nav">
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-4 col-sm-12">
+                                        <label class="form-label" for="userName">Name</label>
+                                    </div>
+                                    <div class="col-8 col-sm-12">
+                                        <input class="form-input" type="text" id="input-username" placeholder="Name">
+                                    </div>
+                                    <div class="col-4 col-sm-12">
+                                        <label class="form-label" for="userName">User Name</label>
+                                    </div>
+                                    <div class="col-8 col-sm-12">
+                                        <input class="form-input" type="text" id="input-username" placeholder="User Name">
+                                    </div>
+                                    <div class="col-4 col-sm-12">
+                                        <label class="form-label" for="userPassword">Password</label>
+                                    </div>
+                                    <div class="col-8 col-sm-12">
+                                        <input class="form-input" type="password" id="input-password" placeholder="...">
+                                    </div>
+                                    <div class="col-4 col-sm-12">
+                                        <label class="form-label" for="userPassword">Verify Password</label>
+                                    </div>
+                                    <div class="col-8 col-sm-12">
+                                        <input class="form-input" type="password" id="input-password" placeholder="...">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-primary input-group-btn">Submit</button>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="modal-footer">
-                  ...
-                </div>
-              </div>
-              <div>
-                <!--Shouldn't there be a password blank here?-->
-              </div>
             </div>
+            <div class="modal-footer">
+                ...
+            </div>
+        </div>
+        <div>
+            <!--Shouldn't there be a password blank here?-->
+        </div>
+    </div>
 
 
 
 
+  
+  
 
+    <!-- Linking to JQuery CDN -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Custom JavaScript File -->
+    <script src="assets/js/script.js"></script>
+</body>
 
-
-
-
-        <!-- Linking to JQuery CDN -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <!-- Custom JavaScript File -->
-        <script src="assets/js/script.js" type="text/JavaScript"></script>
-	</body>
 </html>
+
+<style type="text/css">
+    .heroImg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* Preserve aspet ratio */
+        min-width: 100%;
+        z-index: -2;
+    }
+    
+    .panel {}
+    
+    .onTopOfHeroImage {
+        align-content: center;
+        min-width:
+    }
+    
+    h1 {
+        text-shadow: 1px 1px 1px blue;
+    }
+    
+    .formLabel {
+        font-family: 'Raleway', sans-serif;
+        text-decoration-color: blue;
+    }
+    
+    .buttonWrapper {
+        width: 100%;
+        align-items: center !important;
+        justify-content: center;
+        display: flex;
+    }
+    
+    #show-modal {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        .onTopOfHeroImage {
+            max-width: 50%
+        }
+    }
+</style>
+
