@@ -23,6 +23,7 @@ $("#userLogin").on("click", function(){
   var username = $("#login-name").val();
   var password = $("#login-password").val();
   console.log("Login Info - username:"+username+"       password:"+password);
+  window.location.href = "/loggedin"; //redirects user to logged in page upon login
 })
 
 // Create Account

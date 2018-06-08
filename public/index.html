@@ -11,38 +11,44 @@
     <!--Linking to Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Flamenco|Lusitana" rel="stylesheet">
     <!-- Custom CSS File -->
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/index.css" type="text/css">
 </head>
 
 <body>
 
     <!-- Navbar and hero image background -->
     <div class="hero-image index">
-        <div class="welcome">
-            <center>
-                <h1>Welcome!</h1>
-            </center>
-            <p class="introduction">We know that grocery shopping can be time consuming. You have to plan your meals, research recipes, comb through
-                those recipes and make sure that each ingredient is on your list. From Groceries to Gourmet wants to make
-                that easier for you.</p>
 
-            <p class="introduction">We provide a selection of delicious recipes for you to choose from and then create a personally tailored grocery
-                list based off of your selections. Simply add any addition items that you may need, or delete items that
-                you already have and you're ready to go. Please create an account below to get started.</p>
-        </div>
+    </div>
 
-        
-        <div class="login">
-            <div class="form-group">
-                <label class="form-label formLabel" for="email">Email Address</label>
-                <input class="form-input" type="text" name="email" placeholder="Email">
-                <label class="form-label formLabel" for="password">Password</label>
-                <input class="form-input" type="password" name="password" placeholder="Password">
-                </br>
-                <button id="userLogin" class="btn btn-primary input-group-btn" type="submit">Login</button>
-                </br>
-                <div class="buttonWrapper">
-                    <button class="btn btn-primary" id="showModal">Create Account</button>
+    <!-- Centered Panel to contain welcome message and log in form -->
+    <div class="col-8 col-mx-auto">
+        <div class="row panel center" style="padding:20px; margin-top: 200px;">
+            <div class="welcome">
+                <center>
+                    <h1 style="text-align:center;">Welcome!</h1>
+                </center>
+                <p class="introduction">We know that grocery shopping can be time consuming. You have to plan your meals, research recipes, comb through
+                    those recipes and make sure that each ingredient is on your list. From Groceries to Gourmet wants to make
+                    that easier for you.</p>
+
+                <p class="introduction">We provide a selection of delicious recipes for you to choose from and then create a personally tailored grocery
+                    list based off of your selections. Simply add any addition items that you may need, or delete items that
+                    you already have and you're ready to go. Please create an account below to get started.</p>
+            </div>
+
+            <div class="login">
+                <div class="form-group">
+                    <label class="form-label formLabel" for="email">Email Address</label>
+                    <input class="form-input" type="text" name="email" placeholder="Email">
+                    <label class="form-label formLabel" for="password">Password</label>
+                    <input class="form-input" type="password" name="password" placeholder="Password">
+                    </br>
+                    <div class="buttonWrapper col-4 col-mx-auto" style="align-items: center;">
+                        <button id="userLogin" class="btn btn-primary input-group-btn" type="submit">Login</button>
+                        OR   
+                        <button class="btn btn-primary" id="showModal">Create Account</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,6 +112,7 @@
                 </div>
             </div>
         </div>
+    
 
 
 
@@ -123,8 +130,8 @@
 </br>
     <!-- Footer -->
     <footer>
-        <div class="footer-copyright">
-          <div class="container">
+        <div class="footer-copyright row">
+          <div class="container col-8 col-mx-auto footer" style="text-align:center;">
             © 2018 UCF Coding Bootcamp | <a href="https://github.com/B-Helgeson">Brandon Helgeson</a> | <a href="https://github.com/csthewriter">Christopher Stanley</a> | <a href="https://github.com/tomnite">Thomas Knight</a> | <a href="https://github.com/jahinzmann">Jeff Hinzmann</a>
           </div>
         </div>
