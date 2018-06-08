@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-USE groceries_db;
-
-=======
 INSERT INTO saved_recipes (id, real_name, user_name, user_id)
 VALUES ();
 
@@ -10,4 +6,3 @@ VALUES ();
 
 INSERT INTO user (id, real_name, user_name, user_id, password)
 VALUES ();
->>>>>>> christopher
