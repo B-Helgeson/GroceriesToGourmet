@@ -15,205 +15,36 @@
 <body>
 
     <!-- Navbar and hero image background -->
-    <header class="navbar">
-        <section class="navbar-section">
-          <a href="#" class="navbar-brand mr-2">Spectre.css</a>
-          <a href="#" class="btn btn-link">Docs</a>
-          <a href="https://github.com/picturepan2/spectre" class="btn btn-link">GitHub</a>
-        </section>
-        <section class="navbar-section">
-          <div class="input-group input-inline">
-            <input class="form-input" type="text" placeholder="search">
-            <button class="btn btn-primary input-group-btn">Search</button>
-          </div>
-        </section>
-      </header>
+    <div class="hero-image index">
+        <div class="welcome">
+            <center>
+                <h1>Welcome!</h1>
+            </center>
+            <p class="introduction">We know that grocery shopping can be time consuming. You have to plan your meals, research recipes, comb through
+                those recipes and make sure that each ingredient is on your list. From Groceries to Gourmet wants to make
+                that easier for you.</p>
 
-
-    <!-- <header class="navbar">
-        <div class="hero-image">
-            Hero Image
-            <!-- <img class="heroImg" src="assets\img\background.jpg" alt="Groceries" <div class="hero-text">
-            <h1>Welcome, (name of the user to be inserted dynamically).</h1>
+            <p class="introduction">We provide a selection of delicious recipes for you to choose from and then create a personally tailored grocery
+                list based off of your selections. Simply add any addition items that you may need, or delete items that
+                you already have and you're ready to go. Please create an account below to get started.</p>
         </div>
-
-        <section class="navbar-section">
-            <a href="#" class="btn btn-link">Recipes</a>
-            <a href="#" class="btn btn-link">My Saved Lists</a>
-        </section>
-        <section class="navbar-center">
-            <h4>Welcome #userName</h4>
-        </section>
-        <section class="navbar-section">
-            <a href="#" class="btn btn-link">Edit User</a>
-            <a href="#" class="btn btn-link">Logout</a>
-        </section>
-    </header> --> 
-
-    <h1>Welcome!</h1>
-    <!-- Login page is the first page the user finds -->
-    <p>We know that grocery shopping can be time consuming. You have to plan your meals, research recipes, comb through those recipes and make sure that each ingredient is on your list. From Groceries to Gourmet wants to make that easier for you. We provide
-        a selection of delicious recipes for you to choose from and then create a personally tailored grocery list based off of your selections. Simply add any addition items that you may need or delete items that you already have and you're ready to
-        go. Please create an account below to get started.</p>
-    <div class="container onTopOfHeroImage">
-
-        <div class="form-group" id="signin" name="signin" method="post" action="signin">
-            <label class="form-label formLabel" for="email">Email Address</label>
-            <input class="form-input" type="text" name="email" placeholder="Email">
-
-            <label class="form-label formLabel" for="password">Password</label>
-            <input class="form-input" type="password" name="password" placeholder="Password">
-            </br>
-            <button id="userLogin" class="btn btn-primary input-group-btn" type="submit">Login</button>
-        </div>
-      </div>
-
-
-
-    <br />
-
-    <!-- Link to open the modal -->
-    <div class="buttonWrapper">
-        <button class="btn btn-primary" id="showModal">Create Account</button>
-    </div>
-
-    <!-- Create account modal -->
-    <div class="modal inactive" id="modal-1">
-        <a href="#close" class="modal-overlay" aria-label="Close"></a>
-        <div class="modal-container">
-            <div class="modal-header">
-                <a href="#close" class="close-modal btn btn-clear float-right" aria-label="Close"></a>
-                <div class="modal-title h5"><strong>Create Account</strong></div>
-            </div>
-            <div class="modal-body">
-                <div class="content">
-                    <div class="panel">
-                        <div class="panel-nav">
-                        </div>
-                        <div class="panel-body">
-                            <form class="form-horizontal">
-                                <div class="form-group" id="signup" name="signup" method="post" action="/signup">
-                                    <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="email">Email Address</label>
-                                    </div>
-                                    <div class="col-8 col-sm-12">
-                                        <input class="form-input" name="email" type="email" id="create-email" placeholder="Email Address">
-                                    </div>
-                                    <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="firstname">First Name</label>
-                                    </div>
-                                    <div class="col-8 col-sm-12">
-                                        <input class="form-input" name="firstname" type="text" id="create-firstname" placeholder="First Name">
-                                    </div>
-                                    <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="lastname">Last Name</label>
-                                    </div>
-                                    <div class="col-8 col-sm-12">
-                                        <input class="form-input" name="lastname" type="text" id="create-lastname" placeholder="Last Name">
-                                    </div>
-                                    <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="password">Password</label>
-                                    </div>
-                                    <div class="col-8 col-sm-12">
-                                        <input class="form-input" name="password" type="password" id="create-password" placeholder="...">
-                                    </div>
-                                    <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="password">Verify Password</label>
-                                    </div>
-                                    <div class="col-8 col-sm-12">
-                                        <input class="form-input" type="password" id="verify-password" placeholder="...">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="panel-footer">
-                            <button id="NewAcctSub" class="btn btn-primary input-group-btn" type="submit">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                ...
+        <div class="login">
+            <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input class="form-input" type="text" id="name" placeholder="John Doe">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-input" type="text" id="username" placeholder="johndoe123">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="text" id="password" placeholder="example@gmail.com">
+                <button class="btn btn-block btn-success">Submit</button>
             </div>
         </div>
     </div>
 
-
-
-
-
-
-
-    <!-- Linking to JQuery CDN -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Custom JavaScript File -->
-    <script src="assets/js/script.js"></script>
+        <!-- Linking to JQuery CDN -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Custom JavaScript File -->
+        <script src="assets/js/script.js"></script>
 </body>
 
-<section class="footer">
-    <ul>
-        <li><a href="https://github.com/csthewriter">Christopher Stanley</a> <br></li>
-        <li><a href="https://github.com/tomnite">Thomas Knight</a> <br></li>
-        <li><a href="https://github.com/jahinzmann">Jeff Hinzmann</a> <br></li>
-        <li><a href="https://github.com/B-Helgeson">Brandon Helgeson</a> <br></li>
-    </ul>
-    </footer>
-
 </html>
-nb
-<style type="text/css">
-    .welcome {
-        margin: 2px;
-        border: 3px;
-    }
-    
-    .heroImg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        /* Preserve aspet ratio */
-        min-width: 100%;
-        z-index: -2;
-    }
-    /* .panel {} */
-    
-    .onTopOfHeroImage {
-        align-content: center;
-        /* min-width: */
-    }
-    
-    h1 {
-        text-shadow: 1px 1px 1px blue;
-        text-emphasis: bold;
-    }
-    
-    p {
-        color: white;
-        text-emphasis: bold;
-        text-shadow: black;
-    }
-    
-    .formLabel {
-        font-family: 'Raleway', sans-serif;
-        text-decoration-color: blue;
-    }
-    
-    .buttonWrapper {
-        width: 100%;
-        align-items: center !important;
-        justify-content: center;
-        display: flex;
-    }
-    
-    #show-modal {
-        text-align: center;
-        margin: 0 auto;
-        position: relative;
-    }
-    
-    @media only screen and (min-width: 600px) {
-        .onTopOfHeroImage {
-            max-width: 50%
-        }
-    }
-</style>
