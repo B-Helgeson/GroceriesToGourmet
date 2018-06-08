@@ -3,6 +3,7 @@
         body {
             background-color: #35cf0e;
             font-family: 'Raleway', sans-serif;
+            color: black;
             text-decoration-color: blue;
         }
         
@@ -44,3 +45,7 @@
             min-width: 100%;
             z-index: -2;
         }
+        
+        .navbar-section {}
+        
+        .footer {}
