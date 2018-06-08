@@ -91,7 +91,25 @@
         </div>
 
 
-
+        <!-- Testing Out the Recipe Popover with Loading ICON while API fetches results -->
+        <div class="popover popover-right">
+            <button class="btn btn-primary" style="max-width:150px;"><img style="max-width:150px;" src="assets\img\stock-api-img.jpg"/></button> 
+            <!-- Button will be replaced with the image/icon of the chosen recipes -->
+            <div class="popover-container">
+              <div class="card">
+                <div class="card-header">
+                  Recipe Title Goes Here
+                </div>
+                <div class="card-body" id="recipeCall"> 
+                    <!-- Recipe dynamically replaces content, but loading is default (before API replies) -->
+                    <div class="loading loading-lg"></div>
+                </div>
+                <div class="card-footer">
+                  Recipe Instructions Go Here
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
