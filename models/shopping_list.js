@@ -1,30 +1,16 @@
 // // Ingredients Model //
 var Sequelize = require ("sequelize");
-
+  
 module.exports = function(sequelize, DataTypes) {
   var shopping_list = sequelize.define("shopping_list", {
-    id: {
-      type: Sequelize.INTEGER
-    },
-    user_id: {
-      type: Sequelize.INTEGER
-    },
-    list_id: {
-      type: Sequelize.INTEGER
-    },
-    ingredients_name: {
-        type: Sequelize.STRING
-    },
-    amount: {
-      type: Sequelize.INTEGER
-    },
-    units: {
-      type: Sequelize.INTEGER
-    },
-    purchased: {
+    list_name: {
       type: Sequelize.STRING
     },
-    uuid: {
+    user_id: {
+      type: Sequelize.INTEGER,
+      foreignKey: true
+    },
+    shopping_list_id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV1,
       primaryKey: true
@@ -32,12 +18,25 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   shopping_list.associate = function(models) {
-    // We're saying that a Post should belong to an Author
-    // A Post can't be created without an Author due to the foreign key constraint
+    // A shopping list belongs to a user, and they can have many
     shopping_list.belongsTo(models.User, {
+      foreignKey: 'user_id'
+    });
+
+    // A shopping list has multiple saved recipes
+    shopping_list.hasMany(models.saved_recipes, {
       foreignKey: {
         allowNull: false
-      }
+      },
+      onDelete: "cascade"
+    });
+
+    //A shopping list has multiple saved ingredients
+    shopping_list.hasMany(models.saved_ingredients, {
+      foreignKey: {
+        allowNull: false
+      },
+      onDelete: "cascade"
     });
   };
 

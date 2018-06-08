@@ -33,6 +33,7 @@ $("#NewAcctSub").on("click", function(){
   let password = $("#create-password").val();
   let passVer = $("#verify-password").val();
   console.log("New Acct Info - username:"+userName+"       password:"+password);
+  window.location.href = "/loggedin"; //redirects user to logged in page upon login
 })
 
 // Get Recipes API Call and Painting the Page w/results...
