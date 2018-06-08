@@ -5,6 +5,13 @@ var router = express.Router();
 var path = require("path");
 var session = require('express-session');
 
+var exports = module.exports = {}
+ 
+exports.signup = function(req, res) {
+ 
+    res.render('signup');
+ 
+}
 
 // HTML Routing Functionality
 //======================================================================
