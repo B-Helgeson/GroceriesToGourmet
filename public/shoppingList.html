@@ -91,7 +91,25 @@
         </div>
 
 
-
+        <!-- Testing Out the Recipe Popover with Loading ICON while API fetches results -->
+        <div class="popover popover-right">
+            <button class="btn btn-primary" style="max-width:150px;"><img style="max-width:150px;" src="assets\img\stock-api-img.jpg"/></button> 
+            <!-- Button will be replaced with the image/icon of the chosen recipes -->
+            <div class="popover-container">
+              <div class="card">
+                <div class="card-header">
+                  Recipe Title Goes Here
+                </div>
+                <div class="card-body" id="recipeCall"> 
+                    <!-- Recipe dynamically replaces content, but loading is default (before API replies) -->
+                    <div class="loading loading-lg"></div>
+                </div>
+                <div class="card-footer">
+                  Recipe Instructions Go Here
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -105,14 +123,16 @@
         <script src="assets/js/script.js"></script>
 </body>
 
-<footer>
-    <ul>
-        <li><a href="https://github.com/csthewriter">Christopher Stanley</a> <br></li>
-        <li><a href="https://github.com/tomnite">Thomas Knight</a> <br></li>
-        <li><a href="https://github.com/jahinzmann">Jeff Hinzmann</a> <br></li>
-        <li><a href="https://github.com/B-Helgeson">Brandon Helgeson</a> <br></li>
-    </ul>
-</footer>
+</br>
+</br>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2018 UCF Coding Bootcamp | <a href="https://github.com/B-Helgeson">Brandon Helgeson</a> | <a href="https://github.com/csthewriter">Christopher Stanley</a> | <a href="https://github.com/tomnite">Thomas Knight</a> | <a href="https://github.com/jahinzmann">Jeff Hinzmann</a>
+          </div>
+        </div>
+      </footer>
 
 </html>
 
