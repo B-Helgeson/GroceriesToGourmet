@@ -30,28 +30,91 @@
                 list based off of your selections. Simply add any addition items that you may need, or delete items that
                 you already have and you're ready to go. Please create an account below to get started.</p>
         </div>
+
+        
         <div class="login">
             <div class="form-group">
-                <label class="form-label" for="name">Full Name</label>
-                <input class="form-input" type="text" id="name" placeholder="John Doe">
-                <label class="form-label" for="username">Username</label>
-                <input class="form-input" type="text" id="username" placeholder="johndoe123">
-                <label class="form-label" for="password">Password</label>
-                <input class="form-input" type="text" id="password" placeholder="example@gmail.com">
-                <button class="btn btn-block btn-success">Submit</button>
+                <label class="form-label formLabel" for="email">Email Address</label>
+                <input class="form-input" type="text" name="email" placeholder="Email">
+    
+                <label class="form-label formLabel" for="password">Password</label>
+                <input class="form-input" type="password" name="password" placeholder="Password">
+                </br>
+                <button id="userLogin" class="btn btn-primary input-group-btn" type="submit">Login</button>
+                <div class="buttonWrapper">
+                    <button class="btn btn-primary" id="showModal">Create Account</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Linking to JQuery CDN -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Custom JavaScript File -->
-    <script src="assets/js/script.js"></script>
+        <!-- Create account modal -->
+        <div class="modal inactive" id="modal-1">
+            <a href="#close" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+                <div class="modal-header">
+                    <a href="#close" class="close-modal btn btn-clear float-right" aria-label="Close"></a>
+                    <div class="modal-title h5"><strong>Create Account</strong></div>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <div class="panel">
+                            <div class="panel-nav">
+                            </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal">
+                                    <div class="form-group" id="signup" name="signup" method="post" action="/signup">
+                                        <div class="col-4 col-sm-12">
+                                            <label class="form-label" for="email">Email Address</label>
+                                        </div>
+                                        <div class="col-8 col-sm-12">
+                                            <input class="form-input" name="email" type="email" id="create-email" placeholder="Email Address">
+                                        </div>
+                                        <div class="col-4 col-sm-12">
+                                            <label class="form-label" for="firstname">First Name</label>
+                                        </div>
+                                        <div class="col-8 col-sm-12">
+                                            <input class="form-input" name="firstname" type="text" id="create-firstname" placeholder="First Name">
+                                        </div>
+                                        <div class="col-4 col-sm-12">
+                                            <label class="form-label" for="lastname">Last Name</label>
+                                        </div>
+                                        <div class="col-8 col-sm-12">
+                                            <input class="form-input" name="lastname" type="text" id="create-lastname" placeholder="Last Name">
+                                        </div>
+                                        <div class="col-4 col-sm-12">
+                                            <label class="form-label" for="password">Password</label>
+                                        </div>
+                                        <div class="col-8 col-sm-12">
+                                            <input class="form-input" name="password" type="password" id="create-password" placeholder="...">
+                                        </div>
+                                        <div class="col-4 col-sm-12">
+                                            <label class="form-label" for="password">Verify Password</label>
+                                        </div>
+                                        <div class="col-8 col-sm-12">
+                                            <input class="form-input" type="password" id="verify-password" placeholder="...">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="panel-footer">
+                                <button id="NewAcctSub" class="btn btn-primary input-group-btn" type="submit">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
 </body>
 
-
-</html>
-=======
 </br>
 </br>
     <!-- Footer -->
@@ -63,5 +126,9 @@
         </div>
       </footer>
 
+    <!-- Linking to JQuery CDN -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Custom JavaScript File -->
+    <script src="assets/js/script.js"></script>
 </html>
 
