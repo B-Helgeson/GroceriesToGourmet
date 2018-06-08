@@ -35,5 +35,5 @@ const   express = require("express"),
         .then(function(results) { // Are being used to drop then rebuild the database  2
         db.sequelize.sync({force: true}) // Because of updated table structure         3
         }) // Comment these lines out later, then comment in the line below            4
-        //   .sync( { force: false} ) //Comment this back in to retain data!
+        // .sync( { force: false} ) //Comment this back in to retain data!
         .then(() => app.listen(PORT,() => console.log("App listening on PORT " + PORT )))

@@ -16,15 +16,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV1,
       primaryKey: true
-    },
-    shopping_list_id: {
-      type: DataTypes.UUID,
-      foreignKey: true
     }
   });
 
   saved_recipes.associate = function(models) {
-    saved_recipes.belongsTo(models.shopping_list, {
+    saved_recipes.belongsTo(models.shopping_lists, {
       foreignKey: 'recipe_id'
     });
   };
