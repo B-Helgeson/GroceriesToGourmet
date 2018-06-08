@@ -13,7 +13,7 @@ const   express = require("express"),
         routes = require("./controllers/controller.js");
 
 // app use functionality
-        app.use(express.static("public")); //required to properly handle css/js routing in public. 
+        app.use(express.static("public")); //required to properly handle css/js paths
         app.use(bodyParser.urlencoded({ extended: true }));
         app.use(bodyParser.json());
         app.use(routes); 
