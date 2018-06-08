@@ -10,7 +10,10 @@ const   express = require("express"),
         app = express(),
         PORT = process.env.PORT || 3000,
         db = require("./models"),
-        routes = require("./controllers/controller.js");
+        routes = require("./controllers/controller.js"),
+        authroutes = require("./controllers/authController.js"),
+        //Routes
+        authRoute = require('./routes/auth.js')(app,passport);
 
 // app use functionality
         app.use(express.static("public")); //required to properly handle css/js routing in public. 
