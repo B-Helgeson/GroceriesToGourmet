@@ -9,61 +9,34 @@
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
     <!-- Custom CSS File -->
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
 <body>
-    <!-- After a User Logs In -->
 
     <!-- Nav Bar -->
-    <header class="navbar">
-        <div class="hero-image">
-            <!-- Hero Image  -->
-            <img class="heroImg" src="assets\img\mainHero.jpg" alt="Groceries" <div class="hero-text">
-            <h1>Welcome, (name of the user to be inserted dynamically).</h1>
-
-            <button>Create Grocery List</button>
+    <!-- Add in the Links -->
+    <header>
+        <div class="hero-image home">
+            <div class="navbar">
+                <section class="navbar-section">
+                    <a href="#" class="btn btn-success btn-lg">Recipes</a>
+                    <a href="#" class="btn btn-success btn-lg">Grocery List</a>
+                    <a href="#" class="btn btn-success btn-lg">Logout</a>
+                </section>
+                <section class="navbar-section">
+                    <div class="account">
+                        <a href="#" class="btn btn-success btn-lg">User Account</a>
+                    </div>
+                </section>
+            </div>
         </div>
-        </div>
-
-        <section class="navbar-section">
-            <a href="#" class="btn btn-link">Recipes</a>
-            <a href="#" class="btn btn-link">My Saved Lists</a>
-        </section>
-        <section class="navbar-center">
-            <h4>Welcome #userName</h4>
-        </section>
-        <section class="navbar-section">
-            <a href="#" class="btn btn-link">Edit User</a>
-            <a href="#" class="btn btn-link">Logout</a>
-        </section>
     </header>
 
-    </br>
-    <!-- Adding page breaks for white space, for now -->
-    </br>
 
 
-    <!-- <h2>My Recipes</h2> -->
-    <!-- Commented out this section for now, as "my recepies should be on the user/profile page" -->
-    <!-- <div> -->
-    <!--User's recipes-->
-    <!-- </div> -->
-
-
-    <h2>Trending Recipes</h2>
-
-    <div>
-        <ol>
-            <!--Connection to API/dynamic data-->
-        </ol>
-    </div>
-
-    <!-- Sample Recipe Images for now, to be dynamically generated -->
-
-    <button id="getRecipes">Get Recipes</button>
-    <!-- Button to "getRecipes" for now, this will be removed later and replaced with an "on page load" function -->
-
+    <!-- Recipe Cards -->
     <div class="card">
         <div class="col-3" id="recipeDiv">
             <!-- Card 1 -->
@@ -118,7 +91,6 @@
 
 
     <!-- Button to create the Shopping List -->
-
     <div class="popover col-5">
         <button class="btn btn-primary col-5">Create Grocery List</button>
         <div class="popover-container">
@@ -140,31 +112,4 @@
     <script src="assets/js/script.js"></script>
 </body>
 
-<footer>
-    <ul>
-        <li><a href="https://github.com/csthewriter">Christopher Stanley</a> <br></li>
-        <li><a href="https://github.com/tomnite">Thomas Knight</a> <br></li>
-        <li><a href="https://github.com/jahinzmann">Jeff Hinzmann</a> <br></li>
-        <li><a href="https://github.com/B-Helgeson">Brandon Helgeson</a> <br></li>
-    </ul>
-</footer>
-
 </html>
-
-<style>
-    .heroImg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        /* Preserve aspet ratio */
-        min-width: 100%;
-        z-index: -2;
-    }
-    
-    .card {
-        float: center;
-        z-index: -1;
-        display: flex;
-        justify-content: space-between;
-    }
-</style>

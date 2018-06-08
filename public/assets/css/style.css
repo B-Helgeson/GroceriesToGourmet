@@ -1,10 +1,18 @@
         /* <link rel="stylesheet" href="spectre.min.css"><link rel="stylesheet" href="spectre-exp.min.css"><link rel="stylesheet" href="spectre-icons.min.css"><link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css"><link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"><link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"> */
         
         body {
-            background-color: #35cf0e;
+            background-color: white;
             font-family: 'Raleway', sans-serif;
             color: black;
             text-decoration-color: blue;
+        }
+
+        header {
+            height: 300px;
+        }
+
+        a.link {
+            padding: 10px 10px;
         }
         
         .recipe {
@@ -45,7 +53,13 @@
             min-width: 100%;
             z-index: -2;
         }
-        
-        .navbar-section {}
-        
-        .footer {}
+    
+        .home {
+            background-image: url("../img/main.jpg");
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
