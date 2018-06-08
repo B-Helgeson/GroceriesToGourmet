@@ -6,6 +6,16 @@
             text-decoration-color: green;
         }
 
+        body.index {
+            background-image: ("../img/login.jpg");
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
         header {
             height: 300px;
         }

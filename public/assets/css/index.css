@@ -10,7 +10,7 @@ html {
   body {
     background: transparent; 
   }
-
+  
   .center, .footer {
     background: rgba(255,255,255,0.5);
   }
