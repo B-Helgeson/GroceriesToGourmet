@@ -36,26 +36,25 @@
         </section>
     </header>
 
-    <div class="welcome">
-        <h1>Welcome!</h1>
-        <!-- Login page is the first page the user finds -->
-        <p>We know that grocery shopping can be time consuming. You have to plan your meals, research recipes, comb through those recipes and make sure that each ingredient is on your list. From Groceries to Gourmet wants to make that easier for you. We
-            provide a selection of delicious recipes for you to choose from and then create a personally tailored grocery list based off of your selections. Simply add any addition items that you may need or delete items that you already have and you're
-            ready to go. Please create an account below to get started.</p>
-        <div class="container onTopOfHeroImage">
+    <h1>Welcome!</h1>
+    <!-- Login page is the first page the user finds -->
+    <p>We know that grocery shopping can be time consuming. You have to plan your meals, research recipes, comb through those recipes and make sure that each ingredient is on your list. From Groceries to Gourmet wants to make that easier for you. We provide
+        a selection of delicious recipes for you to choose from and then create a personally tailored grocery list based off of your selections. Simply add any addition items that you may need or delete items that you already have and you're ready to
+        go. Please create an account below to get started.</p>
+    <div class="container onTopOfHeroImage">
 
-            <div class="form-group">
-                <label class="form-label formLabel" for="name">Name</label>
-                <input class="form-input" type="text" id="login-name" placeholder="Name">
+        <div class="form-group" id="signin" name="signin" method="post" action="signin">
+            <label class="form-label formLabel" for="email">Email Address</label>
+            <input class="form-input" type="text" name="email" placeholder="Email">
 
-                <label class="form-label formLabel" for="password">password</label>
-                <input class="form-input" type="password" id="login-password" placeholder="password">
-                </br>
-                <button id="userLogin" class="btn btn-primary input-group-btn">Login</button>
-            </div>
+            <label class="form-label formLabel" for="password">Password</label>
+            <input class="form-input" type="password" name="password" placeholder="Password">
+            </br>
+            <button id="userLogin" class="btn btn-primary input-group-btn" type="submit">Login</button>
         </div>
+      </div>
 
-    </div>
+
 
     <br />
 
@@ -79,27 +78,33 @@
                         </div>
                         <div class="panel-body">
                             <form class="form-horizontal">
-                                <div class="form-group">
+                                <div class="form-group" id="signup" name="signup" method="post" action="/signup">
                                     <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="userName">Name</label>
+                                        <label class="form-label" for="email">Email Address</label>
                                     </div>
                                     <div class="col-8 col-sm-12">
-                                        <input class="form-input" type="text" id="create-realname" placeholder="Name">
+                                        <input class="form-input" name="email" type="email" id="create-email" placeholder="Email Address">
                                     </div>
                                     <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="userName">User Name</label>
+                                        <label class="form-label" for="firstname">First Name</label>
                                     </div>
                                     <div class="col-8 col-sm-12">
-                                        <input class="form-input" type="text" id="create-username" placeholder="User Name">
+                                        <input class="form-input" name="firstname" type="text" id="create-firstname" placeholder="First Name">
                                     </div>
                                     <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="userPassword">Password</label>
+                                        <label class="form-label" for="lastname">Last Name</label>
                                     </div>
                                     <div class="col-8 col-sm-12">
-                                        <input class="form-input" type="password" id="create-password" placeholder="...">
+                                        <input class="form-input" name="lastname" type="text" id="create-lastname" placeholder="Last Name">
                                     </div>
                                     <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="userPassword">Verify Password</label>
+                                        <label class="form-label" for="password">Password</label>
+                                    </div>
+                                    <div class="col-8 col-sm-12">
+                                        <input class="form-input" name="password" type="password" id="create-password" placeholder="...">
+                                    </div>
+                                    <div class="col-4 col-sm-12">
+                                        <label class="form-label" for="password">Verify Password</label>
                                     </div>
                                     <div class="col-8 col-sm-12">
                                         <input class="form-input" type="password" id="verify-password" placeholder="...">
@@ -108,7 +113,7 @@
                             </form>
                         </div>
                         <div class="panel-footer">
-                            <button id="NewAcctSub" class="btn btn-primary input-group-btn">Submit</button>
+                            <button id="NewAcctSub" class="btn btn-primary input-group-btn" type="submit">Sign Up</button>
                         </div>
                     </div>
                 </div>
