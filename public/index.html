@@ -27,17 +27,15 @@
         go. Please create an account below to get started.</p>
     <div class="container onTopOfHeroImage">
 
-        <div class="form-group">
-            <label class="form-label formLabel" for="name">Name</label>
-            <input class="form-input" type="text" id="login-name" placeholder="Name">
+        <div class="form-group" id="signin" name="signin" method="post" action="signin">
+            <label class="form-label formLabel" for="email">Email Address</label>
+            <input class="form-input" type="text" name="email" placeholder="Email">
 
-            <label class="form-label formLabel" for="password">password</label>
-            <input class="form-input" type="password" id="login-password" placeholder="password">
+            <label class="form-label formLabel" for="password">Password</label>
+            <input class="form-input" type="password" name="password" placeholder="Password">
             </br>
-            <button id="userLogin" class="btn btn-primary input-group-btn">Login</button>
+            <button id="userLogin" class="btn btn-primary input-group-btn" type="submit">Login</button>
         </div>
-
-
     </div>
 
     <br />
@@ -62,27 +60,33 @@
                         </div>
                         <div class="panel-body">
                             <form class="form-horizontal">
-                                <div class="form-group">
+                                <div class="form-group" id="signup" name="signup" method="post" action="/signup">
                                     <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="userName">Name</label>
+                                        <label class="form-label" for="email">Email Address</label>
                                     </div>
                                     <div class="col-8 col-sm-12">
-                                        <input class="form-input" type="text" id="create-realname" placeholder="Name">
+                                        <input class="form-input" name="email" type="email" id="create-email" placeholder="Email Address">
                                     </div>
                                     <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="userName">User Name</label>
+                                        <label class="form-label" for="firstname">First Name</label>
                                     </div>
                                     <div class="col-8 col-sm-12">
-                                        <input class="form-input" type="text" id="create-username" placeholder="User Name">
+                                        <input class="form-input" name="firstname" type="text" id="create-firstname" placeholder="First Name">
                                     </div>
                                     <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="userPassword">Password</label>
+                                        <label class="form-label" for="lastname">Last Name</label>
                                     </div>
                                     <div class="col-8 col-sm-12">
-                                        <input class="form-input" type="password" id="create-password" placeholder="...">
+                                        <input class="form-input" name="lastname" type="text" id="create-lastname" placeholder="Last Name">
                                     </div>
                                     <div class="col-4 col-sm-12">
-                                        <label class="form-label" for="userPassword">Verify Password</label>
+                                        <label class="form-label" for="password">Password</label>
+                                    </div>
+                                    <div class="col-8 col-sm-12">
+                                        <input class="form-input" name="password" type="password" id="create-password" placeholder="...">
+                                    </div>
+                                    <div class="col-4 col-sm-12">
+                                        <label class="form-label" for="password">Verify Password</label>
                                     </div>
                                     <div class="col-8 col-sm-12">
                                         <input class="form-input" type="password" id="verify-password" placeholder="...">
@@ -91,7 +95,7 @@
                             </form>
                         </div>
                         <div class="panel-footer">
-                            <button id="NewAcctSub" class="btn btn-primary input-group-btn">Submit</button>
+                            <button id="NewAcctSub" class="btn btn-primary input-group-btn" type="submit">Sign Up</button>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 -- SQL File for DataBase Schema
-DROP DATABASE IF EXISTS groceries_db;
+--DROP DATABASE IF EXISTS groceries_db;
 CREATE DATABASE groceries_db;
--- USE groceries_db;
+USE groceries_db;
 
 -- CREATE TABLE saved_recipes (
 --     id int NOT NULL AUTO_INCREMENT,
