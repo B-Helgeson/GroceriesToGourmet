@@ -1,7 +1,7 @@
 var Sequelize = require ("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define("user", {
+  var users = sequelize.define("users", {
     user_id: {
       autoIncrement: true,
       primaryKey: true,
@@ -40,13 +40,17 @@ module.exports = function(sequelize, DataTypes) {
     }
 });
 
-  User.associate = function(models) {
-    // Associating User with shopping_list
-    // When a User is deleted, also delete any associated shopping lists
-    User.hasMany(models.shopping_list, {
+  users.associate = function(models) {
+    users.hasMany(models.shopping_lists, {
       onDelete: "cascade"
     });
   };
 
-  return User;
+//   user.associate = function(models) {
+//       user.hasMany(modes.shopping_list, {
+//     onDelete: "cascade"
+//       })
+//   }
+
+  return users;
 };
