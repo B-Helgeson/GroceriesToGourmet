@@ -3,61 +3,31 @@ var Sequelize = require ("sequelize");
 
 module.exports = function(sequelize, DataTypes) {
   var saved_recipes = sequelize.define("saved_recipes", {
-    id: {
+    api_recp_id: {
       type: Sequelize.INTEGER
-    },
-    real_name: {
+    }, 
+    recipe_name: {
       type: Sequelize.STRING
     },
-    user_name: {
+    recipe_descr: {
       type: Sequelize.STRING
     },
-    user_id: {
-        type: Sequelize.INTEGER
-    },
-    uuid: {
+    recipe_id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV1,
       primaryKey: true
+    },
+    shopping_list_id: {
+      type: DataTypes.UUID,
+      foreignKey: true
     }
   });
 
   saved_recipes.associate = function(models) {
-    // We're saying that a saved_recipes should belong to an User
-    // A saved_recipes can't be created without an User due to the foreign key constraint
-    saved_recipes.belongsTo(models.User, {
-      foreignKey: {
-        allowNull: false
-      }
+    saved_recipes.belongsTo(models.shopping_list, {
+      foreignKey: 'recipe_id'
     });
   };
 
   return saved_recipes;
 };
-
-
-
-
-// var Sequelize = require("sequelize");
-// // sequelize (lowercase) references our connection to the DB //
-// // var sequelize = require("../config/connection.js");
-
-// var saved_recipes = sequelize.define("saved_recipes", {
-//     id: {
-//       type: Sequelize.INTEGER
-//     },
-//     real_name: {
-//       type: Sequelize.STRING
-//     },
-//     user_name: {
-//       type: Sequelize.STRING
-//     },
-//     user_id: {
-//         type: Sequelize.INTEGER
-//     }
-//   });
-  
-//   // Syncs with DB //
-//   saved_recipes.sync();
-  
-//   module.exports = saved_recipes;
