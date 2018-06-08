@@ -10,10 +10,7 @@ const   express = require("express"),
         app = express(),
         PORT = process.env.PORT || 3000,
         db = require("./models"),
-        routes = require("./controllers/controller.js"),
-        authroutes = require("./controllers/authController.js"),
-        //Routes
-        authRoute = require('./routes/auth.js')(app,passport);
+        routes = require("./controllers/controller.js");
 
 // app use functionality
         app.use(express.static("public")); //required to properly handle css/js routing in public. 
@@ -31,9 +28,7 @@ const   express = require("express"),
         // app.engine('hbs', exphbs({
         // extname: '.hbs'
         // }));
-        // app.set('view engine', '.hbs');
-//load passport strategies
-        require('./config/passport/passport.js')(passport, db.user);
+// app.set('view engine', '.hbs');
 // starts the Sequelize server 
         db.sequelize
           .sync( { force: false} )
