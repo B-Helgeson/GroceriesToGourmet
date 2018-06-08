@@ -47,12 +47,12 @@ router.post("/api/users", function(req, res) {
 
 // Log In Functionality
 
-  // GET route for getting a specific users
-  router.get("/api/users", function(req, res) {
+  // GET route for getting a specific users (Logging In)
+  router.post("/api/users", function(req, res) {
     db.User.findOne({
       where: {
-        user_name: req.query.user_name,
-        password: req.query.password
+        user_name: req.body.user_name,
+        password: req.body.password
       }
     }).then(function(dbUsers) {
       console.log(dbUsers)
