@@ -1,7 +1,7 @@
 # GroceriesToGourmet
 UCF Group Project
 
-[Click Here to Try It Out](#)
+[Click Here to Try It Out](https://thawing-waters-93408.herokuapp.com/)
 
 ## Mission Statement
 
