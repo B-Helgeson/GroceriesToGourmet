@@ -14,29 +14,29 @@
 
 <body>
     <!-- After a User Logs In -->
-    <img class="heroImg" src="assets\img\mainHero.jpg" alt="Groceries">
+
     <!-- Nav Bar -->
     <header class="navbar">
         <div class="hero-image">
             <!-- Hero Image  -->
+            <img class="heroImg" src="assets\img\mainHero.jpg" alt="Groceries" <div class="hero-text">
+            <h1>Welcome, (name of the user to be inserted dynamically).</h1>
 
-            <div class="hero-text">
-                <h1>Welcome, (name of the user to be inserted dynamically).</h1>
-                <p>And I'm a Photographer</p>
-                <button>Create Grocery List</button>
-            </div>
+            <button>Create Grocery List</button>
         </div>
-        <!-- <section class="navbar-section">
-                        <a href="#" class="btn btn-link">Recipes</a>
-                        <a href="#" class="btn btn-link">My Saved Lists</a>
-                </section>
-                <section class="navbar-center">
-                        <h4>Welcome #userName</h4>
-                </section>
-                <section class="navbar-section">
-                        <a href="#" class="btn btn-link">My Profile</a>
-                        <a href="#" class="btn btn-link">About</a>
-                </section> -->
+        </div>
+
+        <section class="navbar-section">
+            <a href="#" class="btn btn-link">Recipes</a>
+            <a href="#" class="btn btn-link">My Saved Lists</a>
+        </section>
+        <section class="navbar-center">
+            <h4>Welcome #userName</h4>
+        </section>
+        <section class="navbar-section">
+            <a href="#" class="btn btn-link">Edit User</a>
+            <a href="#" class="btn btn-link">Logout</a>
+        </section>
     </header>
 
     </br>
@@ -140,6 +140,15 @@
     <script src="assets/js/script.js"></script>
 </body>
 
+<footer>
+    <ul>
+        <li><a href="https://github.com/csthewriter">Christopher Stanley</a> <br></li>
+        <li><a href="https://github.com/tomnite">Thomas Knight</a> <br></li>
+        <li><a href="https://github.com/jahinzmann">Jeff Hinzmann</a> <br></li>
+        <li><a href="https://github.com/B-Helgeson">Brandon Helgeson</a> <br></li>
+    </ul>
+</footer>
+
 </html>
 
 <style>
@@ -150,5 +159,12 @@
         /* Preserve aspet ratio */
         min-width: 100%;
         z-index: -2;
+    }
+    
+    .card {
+        float: center;
+        z-index: -1;
+        display: flex;
+        justify-content: space-between;
     }
 </style>

@@ -14,89 +14,121 @@
 
 <body>
 
-JeffHinzmann
-    <div class="hero-image" id="shopping">
-        <div class="hero-text">
-            <h1 style="font-size:50px">Shopping List</h1>
-            <button>Hire me</button>
+    <header class="navbar">
+        <div class="hero-image">
+            <!-- Hero Image  -->
+            <img class="heroImg" src="assets\img\shoppingHero.jpg" alt="Groceries" <div class="hero-text">
+            <h1>Welcome, (name of the user to be inserted dynamically).</h1>
         </div>
-    </div>
 
-    <!-- <section class="navbar-section">
-              <a href="#" class="btn btn-link">Recipes</a>
-              <a href="#" class="btn btn-link">My Saved Lists</a>
-            </section>
-            <section class="navbar-center">
-              <h4>Welcome #userName</h4>
-            </section>
-            <section class="navbar-section">
-              <a href="#" class="btn btn-link">My Profile</a>
-              <a href="#" class="btn btn-link">About</a>
-            </section> -->
-
-
-
-
-    <h1>My Shopping List</h1>
-
-    <ul>
-        <!-- List of ingredients, each with a delete button and a button to check off after purhcased -->
-    </ul>
-
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th>Ingredient</th>
-                <th>Quantity</th>
-                <th>Update</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="active">
-                <td>Eggs, Large</td>
-                <td>1 Dozen</td>
-                <td>Check Off
-                    <i class="icon icon-check">Check Off</i>Delete
-                    <i class="icon icon-cross">Delete</i>
-                </td>
-            </tr>
-            <tr class="active">
-                <td>Chicken Breast</td>
-                <td>16 oz.</td>
-                <td>Check Off
-                    <i class="icon icon-check">Check Off</i>Delete
-                    <i class="icon icon-cross">Delete</i>
-                </td>
-            </tr>
-            <tr class="active">
-                <td>
-                    <input class="form-input" type="text" id="input-username" placeholder="New Ingredient">
-                </td>
-                <td>
-                    <input class="form-input" type="text" id="input-username" placeholder="Quantity">
-                </td>
-                <td>Add
-                    <i class="icon icon-plus"></i>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>New List</h3>
-    <!--Button-->
+        <section class="navbar-section">
+            <a href="#" class="btn btn-link">Recipes</a>
+            <a href="#" class="btn btn-link">My Saved Lists</a>
+        </section>
+        <section class="navbar-center">
+            <h4>Welcome #userName</h4>
+        </section>
+        <section class="navbar-section">
+            <a href="#" class="btn btn-link">Edit User</a>
+            <a href="#" class="btn btn-link">Logout</a>
+        </section>
 
 
 
 
+        <div class="shoppingList">
+            <h1>My Shopping List</h1>
+
+            <ul>
+                <!-- List of ingredients, each with a delete button and a button to check off after purhcased -->
+            </ul>
+
+            <h3>New List</h3>
+            <!--Button-->
+
+        </div>
+
+        <div class="recipes">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active">
+                        <td>Eggs, Large</td>
+                        <td>1 Dozen</td>
+                        <td>Check Off
+                            <i class="icon icon-check">Check Off</i>Delete
+                            <i class="icon icon-cross">Delete</i>
+                        </td>
+                    </tr>
+                    <tr class="active">
+                        <td>Chicken Breast</td>
+                        <td>16 oz.</td>
+                        <td>Check Off
+                            <i class="icon icon-check">Check Off</i>Delete
+                            <i class="icon icon-cross">Delete</i>
+                        </td>
+                    </tr>
+                    <tr class="active">
+                        <td>
+                            <input class="form-input" type="text" id="input-username" placeholder="New Ingredient">
+                        </td>
+                        <td>
+                            <input class="form-input" type="text" id="input-username" placeholder="Quantity">
+                        </td>
+                        <td>Add
+                            <i class="icon icon-plus"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
 
 
 
 
 
-    <!-- Linking to JQuery CDN -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Custom JavaScript File -->
-    <script src="assets/js/script.js"></script>
+
+
+
+
+
+        <!-- Linking to JQuery CDN -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Custom JavaScript File -->
+        <script src="assets/js/script.js"></script>
 </body>
 
+<footer>
+    <ul>
+        <li><a href="https://github.com/csthewriter">Christopher Stanley</a> <br></li>
+        <li><a href="https://github.com/tomnite">Thomas Knight</a> <br></li>
+        <li><a href="https://github.com/jahinzmann">Jeff Hinzmann</a> <br></li>
+        <li><a href="https://github.com/B-Helgeson">Brandon Helgeson</a> <br></li>
+    </ul>
+</footer>
+
 </html>
+
+<!-- <style>
+    /* #shopping {
+        background-image: csrc="assets\img\shoppingHero.jpg" alt="Groceries";
+        z-index: -2;
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
+    
+    .shoppingList {}
+    
+    .recipes {}
+</style> -->

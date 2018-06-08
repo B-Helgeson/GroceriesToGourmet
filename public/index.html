@@ -14,11 +14,27 @@
 
 <body>
 
-    <!-- Hero Image of Groceries -->
-    <img class="heroImg" src="assets\img\groceriesHero.jpg" alt="Groceries">
+    <!-- Navbar and hero image background -->
 
+    <header class="navbar">
+        <div class="hero-image">
+            <!-- Hero Image  -->
+            <img class="heroImg" src="assets\img\background.jpg" alt="Groceries" <div class="hero-text">
+            <h1>Welcome, (name of the user to be inserted dynamically).</h1>
+        </div>
 
-
+        <section class="navbar-section">
+            <a href="#" class="btn btn-link">Recipes</a>
+            <a href="#" class="btn btn-link">My Saved Lists</a>
+        </section>
+        <section class="navbar-center">
+            <h4>Welcome #userName</h4>
+        </section>
+        <section class="navbar-section">
+            <a href="#" class="btn btn-link">Edit User</a>
+            <a href="#" class="btn btn-link">Logout</a>
+        </section>
+    </header>
 
     <h1>Welcome!</h1>
     <!-- Login page is the first page the user finds -->
@@ -36,7 +52,9 @@
             </br>
             <button id="userLogin" class="btn btn-primary input-group-btn" type="submit">Login</button>
         </div>
-    </div>
+      </div>
+
+
 
     <br />
 
@@ -118,9 +136,23 @@
     <script src="assets/js/script.js"></script>
 </body>
 
-</html>
+<section class="footer">
+    <ul>
+        <li><a href="https://github.com/csthewriter">Christopher Stanley</a> <br></li>
+        <li><a href="https://github.com/tomnite">Thomas Knight</a> <br></li>
+        <li><a href="https://github.com/jahinzmann">Jeff Hinzmann</a> <br></li>
+        <li><a href="https://github.com/B-Helgeson">Brandon Helgeson</a> <br></li>
+    </ul>
+    </footer>
 
+</html>
+nb
 <style type="text/css">
+    .welcome {
+        margin: 2px;
+        border: 3px;
+    }
+    
     .heroImg {
         position: fixed;
         top: 0;
@@ -142,8 +174,9 @@
     }
     
     p {
-        text-decoration-color: 1px 1px 1px black;
+        color: white;
         text-emphasis: bold;
+        text-shadow: black;
     }
     
     .formLabel {
