@@ -1,10 +1,26 @@
-        /* <link rel="stylesheet" href="spectre.min.css"><link rel="stylesheet" href="spectre-exp.min.css"><link rel="stylesheet" href="spectre-icons.min.css"><link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css"><link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"><link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"> */
-        
         body {
-            background-color: #35cf0e;
+            background-color: white;
+            background-image: ("./assets/img/login.jpg");
             font-family: 'Raleway', sans-serif;
             color: black;
-            text-decoration-color: blue;
+            text-decoration-color: green;
+        }
+
+        header {
+            height: 300px;
+        }
+
+        .login {
+            position:absolute;
+            top:50%;
+            left:50%;
+            right:50%
+            margin-top:-50px; 
+            margin-left:-100px;
+        }
+
+        a.link {
+            padding: 10px 10px;
         }
         
         .recipe {
@@ -34,18 +50,40 @@
             margin-bottom: 0;
             font-weight: 300;
         }
-        
-        .heroImg {
-            /* max-height:150px; */
+    
+        .home {
+            background-image: url("../img/main.jpg");
+            height: 100%;
             width: 100%;
-            position: center;
-            top: 0;
-            left: 0;
-            /* Preserve aspet ratio */
-            min-width: 100%;
-            z-index: -2;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
         }
-        
-        .navbar-section {}
-        
-        .footer {}
+
+       .shopping {
+            background-image: url("../img/shoppinglist.jpg");
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .index {
+            background-image: url("../img/login.jpg");
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .welcome {
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+        }
