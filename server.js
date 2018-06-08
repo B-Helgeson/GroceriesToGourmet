@@ -31,7 +31,9 @@ const   express = require("express"),
         // app.engine('hbs', exphbs({
         // extname: '.hbs'
         // }));
-// app.set('view engine', '.hbs');
+        // app.set('view engine', '.hbs');
+//load passport strategies
+        require('./config/passport/passport.js')(passport, db.user);
 // starts the Sequelize server 
         db.sequelize
           .sync( { force: false} )
