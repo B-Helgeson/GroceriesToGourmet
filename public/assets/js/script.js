@@ -28,12 +28,13 @@ $("#userLogin").on("click", function(){
 
 // Create Account
 $("#NewAcctSub").on("click", function(){
-  let realName = $("#create-realname").val();
-  let userName = $("#create-username").val();
+  let email = $("#create-email").val();
+  let firstname = $("#create-firstname").val();
+  let lastname = $("#create-lastname").val();
   let password = $("#create-password").val();
   let passVer = $("#verify-password").val();
   console.log("New Acct Info - username:"+userName+"       password:"+password);
-  window.location.href = "/loggedin"; //redirects user to logged in page upon login
+  window.location.href = "/home"; //redirects user to logged in page upon login
 })
 
 // Get Recipes API Call and Painting the Page w/results...
