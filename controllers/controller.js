@@ -103,11 +103,11 @@ router.get("/members", isAuthenticated, function(req, res) {
     "user_name":"Chef Brandon",
     "password":"123"}   */
 
-// router.post("/api/users", function(req, res) {
-//   db.User.create(req.body).then(function(dbUser) {
-//     res.json(dbUser);
-//     });
-// });
+router.post("/api/users", function(req, res) {
+  db.User.create(req.body).then(function(dbUser) {
+    res.json(dbUser);
+    });
+});
 
 
 // Log In Functionality
