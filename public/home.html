@@ -24,14 +24,14 @@
             <div class="navbar">
                 <section class="navbar-section">
                     <div class="pages">
-                        <a href="#" class="btn btn-success btn-lg buttons">Recipes</a>
-                        <a href="#" class="btn btn-success btn-lg buttons">Grocery List</a>
+                        <a href="/home.html" class="btn btn-success btn-lg">Recipes</a>
+                        <a href="/shoppingList.html" class="btn btn-success btn-lg">Grocery Lists</a>
                     </div>
                 </section>
                 <section class="navbar-section">
                     <div class="account">
-                        <a href="#" class="btn btn-success btn-lg buttons">User Account</a>
-                        <a href="#" class="btn btn-success btn-lg buttons">Logout</a>
+                        <a href="/home.html" class="btn btn-success btn-lg">User Account</a>
+                        <a href="/index.html" class="btn btn-success btn-lg">Logout</a>
                     </div>
                 </section>
             </div>
@@ -56,11 +56,11 @@
             <div class="card-image recipeitem1 col-4">
                 <div class="card-header">
                     <div class="card-title h5 recipename1 col-4">
-                        <h2>Microsoft</h2>
+                        <h2>Italian Tiramisu</h2>
                     </div>
                 </div>
                 <div class="card-body recipelink1">
-                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
+                    <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/tiramisu-recipe-2131631">Recipe Link</a>
                 </div>
                 <img src="assets\img\img1.jpg" height="400px" width="400px" class="img-responsive">
             </div>
@@ -68,105 +68,77 @@
             <div class="card-image recipeitem2 col-4">
                 <div class="card-header">
                     <div class="card-title h5 recipename2 col-4">
-                        <h2>Microsoft</h2>
+                        <h2>Chicken Skewers</h2>
                     </div>
                 </div>
                 <div class="card-body recipelink2">
-                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
+                    <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/asian-chicken-skewers-recipe-2126107">Recipe Link</a>
                 </div>
                 <img src="assets\img\img2.jpg" height="400px" width="400px" class="img-responsive">
+            </div>
 
-    <button class="btn btn-success btn-lg" id="getRecipes">Get Recipes</button>
+            <div class="card-image recipeitem2 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename2 col-4">
+                        <h2>Fresh Bruschetta</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink2">
+                    <a href="https://www.foodnetwork.com/recipes/giada-de-laurentiis/tomato-mozzarella-and-basil-bruschetta-recipe-1940921">Recipe Link</a>
+                </div>
+                <img src="assets\img\img3.jpg" height="400px" width="400px" class="img-responsive">
+            </div>
+
+            <div class="card-image recipeitem2 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename2 col-4">
+                        <h2>Garlic Mussels</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink2">
+                    <a href="https://www.epicurious.com/recipes/food/views/mussels-with-garlic-butter-1909">Recipe Link</a>
+                </div>
+                <img src="assets\img\img4.jpg" height="400px" width="400px" class="img-responsive">
+            </div>
+
+            <div class="card-image recipeitem2 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename2 col-4">
+                        <h2>Chipotle Burritos</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink2">
+                    <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/chipotle-chicken-burritos-recipe-2121135">Recipe Link</a>
+                </div>
+                <img src="assets\img\img5.jpg" height="400px" width="400px" class="img-responsive">
+            </div>
+
+            <div class="card-image recipeitem2 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename2 col-4">
+                        <h2>Perfect Pancakes</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink2">
+                    <a href="https://thestayathomechef.com/pancake-recipe/">Recipe Link</a>
+                </div>
+                <img src="assets\img\img6.jpg" height="400px" width="400px" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+
+    <button class="btn btn-success btn-lg" id="getRecipes">Get More Recipes</button>
     <!-- Button to "getRecipes" for now, this will be removed later and replaced with an "on page load" function -->
 
     <!-- Recipe Cards -->
 <div class="container" id="cardContainer">
     <div class="column"> 
         <div class="column col-3" id="recipeDiv">
-            <!-- Card 1 -->
-            <div class="column col-3">
-                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-            </div>
-            <div class="card-header">
-                <div class="card-title h5">Bacon</div>
-                <div class="card-subtitle text-gray">Meat</div>
-            </div>
-            <div class="card-body">
-                        Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. 
-                        Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. 
-                        Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank.
-            </div>
-
-            <!-- Card 2 -->
-            <div class="column col-3">
-                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-            </div>
-            <div class="card-header">
-                <div class="card-title h5">Cupcake</div>
-                <div class="card-subtitle text-gray">Baking</div>
-            </div>
-            <div class="card-body">
-                        Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. 
-                        Apple pie jelly beans topping carrot cake danish tart cake cheesecake. 
-                        Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. 
-                        Lemon drops tootsie roll marshmallow halvah carrot cake.
-            </div>
-
-            <!-- Card 3 -->
-            <div class="column col-3">
-                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-            </div>
-            <div class="card-header">
-                <div class="card-title h5">Microsoft</div>
-                <div class="card-subtitle text-gray">Software and hardware</div>
-
-        </div>
-        <br>
-        <br>
-        <div class="columns">
-            <!-- Second Row -->
-            <div class="card-image recipeitem4 col-4">
-                <div class="card-header">
-                    <div class="card-title h5 recipename4 col-4">
-                        <h2>Microsoft</h2>
-                    </div>
-                </div>
-                <div class="card-body recipelink4">
-                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
-                </div>
-                <img src="assets\img\img4.jpg" height="400px" width="400px" class="img-responsive">
-
-            </div>
-            <div class="card-image recipeitem5 col-4">
-                <div class="card-header">
-                    <div class="card-title h5 recipename5 col-4">
-                        <h2>Microsoft</h2>
-                    </div>
-                </div>
-                <div class="card-body recipelink5">
-                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
-                </div>
-                <img src="assets\img\img5.jpg" height="400px" width="400px" class="img-responsive">
-            </div>
-            <div class="card-image recipeitem6 col-4">
-                <div class="card-header">
-                    <div class="card-title h5 recipename6 col-4">
-                        <h2>Microsoft</h2>
-                    </div>
-                </div>
-                <div class="card-body recipelink6">
-                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
-                </div>
-                <img src="assets\img\img6.jpg" height="400px" width="400px" class="img-responsive">
-            </div>
-        </div>
-        <br>
     </div>
-    </div>
-    </div>
+</div>
               
-              
-    </div>
+            
     <br>
     <br>
 
@@ -175,7 +147,8 @@
     <center>
     <div class="popover col-5">
 
-        <button id="getRecipes" class="btn btn-success col-5">Create Grocery List</button>
+        <a href="/shoppingList.html" id="createRecipeList" class="btn btn-success btn-lg">Grocery Lists</a>
+        <!-- <button href="/shoppingList.html" id="createRecipeList" class="btn btn-success col-5">Create Grocery List</button> -->
 
         <div class="popover-container">
             <div class="card">
