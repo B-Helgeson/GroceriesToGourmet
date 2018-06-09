@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       type: Sequelize.INTEGER
     },
-
+ 
     firstname: {
         type: Sequelize.STRING,
         notEmpty: true
@@ -49,6 +49,7 @@ module.exports = function(sequelize, DataTypes) {
       onDelete: "cascade"
     });
   };
+
 // Creating a custom method for our User model. 
   //This will check if an unhashed password entered by the 
   //user can be compared to the hashed password stored in our database
@@ -65,6 +66,7 @@ module.exports = function(sequelize, DataTypes) {
 //     onDelete: "cascade"
 //       })
 //   }
+
 
   return users;
 };
