@@ -105,11 +105,7 @@ router.get("/members", isAuthenticated, function(req, res) {
     "password":"pass2123"}  */
 
 router.post("/api/users", function(req, res) {
-<<<<<<< HEAD
-  db.User.create(req.body).then(function(dbUser) {
-=======
   db.users.create(req.body).then(function(dbUser) {
->>>>>>> 8671e4b73931388cffdcbbc78350b41a98bc0dae
     res.json(dbUser);
     });
 });
