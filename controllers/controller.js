@@ -5,6 +5,7 @@ var router = express.Router();
 var path = require("path");
 var session = require('express-session');
 var passport = require("../config/passport/passport.js");
+var api_response = require('../db/api_data.js');
 // Requiring our custom middleware for checking if a user is logged in
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
@@ -218,6 +219,17 @@ router.post("/api/ingredients", function(req, res) {
         res.json(dbRecps);
         });
     });
+
+
+
+
+    // Replicating API Repsonse internally...
+    router.get("/api/response", function(req, res) {
+      var response = api_response;
+      // res.json(response);
+      res.sendFile(response)
+    });
+    
 
 
 // Export routes for server.js to use //
