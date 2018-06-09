@@ -1,13 +1,13 @@
 // constants for the server
 const   express = require("express"),
+        app = express(),
+        passport   = require('./config/passport/passport'),
+        session = require('express-session'),
         bodyParser = require("body-parser"),
-        passport   = require('passport')
+        env = require('dotenv').load(),
         morgan = require("morgan"),
         cookieParser = require("cookie-parser"),
-        session = require('express-session'),
-        env = require('dotenv').load(),
         // exphbs = require('express-handlebars'),
-        app = express(),
         PORT = process.env.PORT || 3000,
         db = require("./models"),
         routes = require("./controllers/controller.js");
