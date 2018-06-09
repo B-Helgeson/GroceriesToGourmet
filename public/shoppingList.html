@@ -18,6 +18,7 @@
 
     <header>
         <div class="hero-image shopping">
+            <!-- <img class="hero-image"src="assets\img\background.jpg" alt="Groceries"> -->
             <div class="navbar">
                 <section class="navbar-section">
                     <div class="pages">
@@ -29,11 +30,13 @@
                     <div class="account">
                         <a href="/home.html" class="btn btn-success btn-lg">User Account</a>
                         <a href="#" class="btn btn-success btn-lg">Logout</a>
+
                     </div>
                 </section>
             </div>
         </div>
     </header>
+
 
 
     <!--Creating a div for the parsed recipes and ingredients-->
@@ -45,6 +48,76 @@
                     <div class="panel-title">
                         <h3>Grocery List</h3>
                     </div>
+
+<!-- Chris removed from below this comment -->
+
+        <div class="shoppingList">
+            <h1>My Shopping List</h1>
+
+        
+
+            <a href="#" class="btn btn-success btn-lg">New List</a>
+
+        </div>
+
+        <div class="recipes">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active">
+                        <td>Eggs, Large</td>
+                        <td>1 Dozen</td>
+                        <td>Check Off
+                            <i class="icon icon-check">Check Off</i>Delete
+                            <i class="icon icon-cross">Delete</i>
+                        </td>
+                    </tr>
+                    <tr class="active">
+                        <td>Chicken Breast</td>
+                        <td>16 oz.</td>
+                        <td>Check Off
+                            <i class="icon icon-check">Check Off</i>Delete
+                            <i class="icon icon-cross">Delete</i>
+                        </td>
+                    </tr>
+                    <tr class="active">
+                        <td>
+                            <input class="form-input" type="text" id="input-username" placeholder="New Ingredient">
+                        </td>
+                        <td>
+                            <input class="form-input" type="text" id="input-username" placeholder="Quantity">
+                        </td>
+                        <td>Add
+                            <i class="icon icon-plus"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+
+        <!-- Testing Out the Recipe Popover with Loading ICON while API fetches results -->
+        <div class="popover popover-right">
+            <button class="btn btn-primary" style="max-width:150px;"><img style="max-width:150px;" src="assets\img\stock-api-img.jpg"/></button> 
+            <!-- Button will be replaced with the image/icon of the chosen recipes -->
+            <div class="popover-container">
+              <div class="card">
+                <div class="card-header">
+                  Recipe Title Goes Here
+                </div>
+                <div class="card-body" id="recipeCall"> 
+                    <!-- Recipe dynamically replaces content, but loading is default (before API replies) -->
+                    <div class="loading loading-lg"></div>
+                  
+<!-- Chris removed from above this comment -->
+                  
                 </div>
                 <div class="panel-body">
                     <!--A series of divs to create items that can be deleted-->

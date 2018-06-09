@@ -23,12 +23,7 @@ const   express = require("express"),
         app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
         app.use(passport.initialize());
         app.use(passport.session()); // persistent login sessions
-//For Handlebars
-        // app.set('views', './views')
-        // app.engine('hbs', exphbs({
-        // extname: '.hbs'
-        // }));
-// app.set('view engine', '.hbs');
+
 // starts the Sequelize server 
         db.sequelize
         // .query('SET FOREIGN_KEY_CHECKS = 0', null, {raw: true}) // These four lines:   1

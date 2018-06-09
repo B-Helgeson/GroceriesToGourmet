@@ -28,12 +28,13 @@ $("#userLogin").on("click", function(){
 
 // Create Account
 $("#NewAcctSub").on("click", function(){
-  let realName = $("#create-realname").val();
-  let userName = $("#create-username").val();
+  let email = $("#create-email").val();
+  let firstname = $("#create-firstname").val();
+  let lastname = $("#create-lastname").val();
   let password = $("#create-password").val();
   let passVer = $("#verify-password").val();
   console.log("New Acct Info - username:"+userName+"       password:"+password);
-  window.location.href = "/loggedin"; //redirects user to logged in page upon login
+  window.location.href = "/home"; //redirects user to logged in page upon login
 })
 
 // Get Recipes API Call and Painting the Page w/results...
@@ -88,9 +89,53 @@ $("#getRecipes").on("click", function() {
 
         $("#recipeDiv").prepend(recipeCardDiv);
       }
-
     });
 });
+
+
+// =================================================================================
+//Attempt to replicate the above API call internally
+
+
+// $("#cardContainer").load(function() 
+$("#getRecipes2").on("click", function(){
+  // Handler for when this specific page loads
+  $("#recipeDiv").empty();
+
+  var results = response.matches;
+      for (var i = 0; i < results.length; i++) {
+
+        var recipeCardDiv = $("<div>"); //Creates the main "cardDiv"
+          recipeCardDiv.addClass("cardDiv");
+
+            var cardImageDiv = $("<div>"); //Creates the div for the "card image"
+              cardImageDiv.addClass("card-image"); 
+              recipeCardDiv.append(cardImageDiv);
+
+            var cardHeaderDiv = $("<div>"); //Creates the div for the "card header"
+              cardHeaderDiv.addClass("card-header"); 
+              recipeCardDiv.append(cardHeaderDiv);
+
+                    var cardTitleDiv = $("<div>"); //Creates the div for the "card Title"
+                      cardTitleDiv.addClass("card-title h5"); 
+                      cardHeaderDiv.append(cardTitleDiv);
+
+                    var cardSubtitleDiv = $("<div>"); //Creates the div for the "card SubTitle"
+                      cardSubtitleDiv.addClass("card-subtitle text-gray");
+                      cardHeaderDiv.append(cardTitleDiv); 
+
+        var rpImage = $("<img>");
+          rpImage.attr("src", results[i].smallImageUrls);
+            cardImageDiv.append(rpImage);
+
+        var rpName = $("<div>");
+          rpName.text(results[i].recipeName);
+            cardTitleDiv.append(rpName);
+
+        $("#recipeDiv").prepend(recipeCardDiv);
+      }
+    });
+
 
 /*    The Code Above Should Be Dynamically Creating Cards in this structure... 
 
