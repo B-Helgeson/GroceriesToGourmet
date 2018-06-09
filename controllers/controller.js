@@ -99,15 +99,16 @@ router.get("/members", isAuthenticated, function(req, res) {
 //====================================================================================
 // Create a user - this functionality works! Requires a model like this: 
 
-/*  {"real_name":"Brandon Helgeson",
-    "user_name":"Chef Brandon",
-    "password":"123"}   */
+/*    {"firstname":"Jeff",
+    "lastname":"Smith",
+    "email":"mail2@mail.com",
+    "password":"pass2123"}  */
 
-// router.post("/api/users", function(req, res) {
-//   db.User.create(req.body).then(function(dbUser) {
-//     res.json(dbUser);
-//     });
-// });
+router.post("/api/users", function(req, res) {
+  db.users.create(req.body).then(function(dbUser) {
+    res.json(dbUser);
+    });
+});
 
 
 // Log In Functionality
@@ -153,7 +154,8 @@ router.get("/api/users", function(req, res) {
 // SHOPPING LIST Related DB Functionality
 // ==============================================================================
 
-// Route to get a given user's saved grocery lists
+// Route to get a given user's saved shopping lists
+    //to use, get with user id in the url
 router.get("/api/users/:id", function(req, res) {
   db.users.findOne({
     where: {
@@ -164,6 +166,58 @@ router.get("/api/users/:id", function(req, res) {
     res.json(dbUser);
   });
 });
+
+
+// Post to Create New Shopping Lists, to use send a message like below:
+
+/*  {"list_name":"My List",
+    "userUserId":1}  */
+
+router.post("/api/shoppingLists", function(req, res) {
+  db.shopping_lists.create(req.body).then(function(dbList) {
+    res.json(dbList);
+    });
+});
+
+
+// Get to return a shopping list and it's given ingredients/recipes:
+router.get("/api/shoppingLists/:id", function(req, res) {
+  db.shopping_lists.findOne({
+    where: {
+      shopping_list_id: req.params.id
+    },
+    include: [db.saved_recipes]
+  }).then(function(dbUser) {
+    res.json(dbUser);
+  });
+});
+
+// Post to create new ingredients, to use, send a message like below:
+
+/*  {"ingredient_name":"Chicken Breast",
+    "purchased":false,
+    "shoppingListShoppingListId":1
+    "item_type":"ingredient"}  */
+
+router.post("/api/ingredients", function(req, res) {
+  db.saved_items.create(req.body).then(function(dbItems) {
+    res.json(dbItems);
+    });
+});
+
+
+// Post to create new recipes, to use, send a message like below:
+
+/*  {"api_recp_id":"1234224",
+    "recipe_name":"Southern Fried Chicken",
+    "recipe_descr":"Finger Lick'n Good!",
+    "shoppingListShoppingListId":1}  */
+
+    router.post("/api/recipes", function(req, res) {
+      db.saved_recipes.create(req.body).then(function(dbRecps) {
+        res.json(dbRecps);
+        });
+    });
 
 
 // Export routes for server.js to use //
