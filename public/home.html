@@ -22,79 +22,121 @@
         <div class="hero-image home">
             <div class="navbar">
                 <section class="navbar-section">
-                    <a href="#" class="btn btn-success btn-lg">Recipes</a>
-                    <a href="#" class="btn btn-success btn-lg">Grocery List</a>
-                    <a href="#" class="btn btn-success btn-lg">Logout</a>
+                    <div class="pages">
+                        <a href="#" class="btn btn-success btn-lg buttons">Recipes</a>
+                        <a href="#" class="btn btn-success btn-lg buttons">Grocery List</a>
+                    </div>
                 </section>
                 <section class="navbar-section">
                     <div class="account">
-                        <a href="#" class="btn btn-success btn-lg">User Account</a>
+                        <a href="#" class="btn btn-success btn-lg buttons">User Account</a>
+                        <a href="#" class="btn btn-success btn-lg buttons">Logout</a>
                     </div>
                 </section>
             </div>
         </div>
     </header>
 
-    <button id="getRecipes">Get Recipes</button>
-    <!-- Button to "getRecipes" for now, this will be removed later and replaced with an "on page load" function -->
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- Recipe Cards -->
-    <div class="card">
-        <div class="col-3" id="recipeDiv">
+
+    <div class="panel-body container">
+        <div class="columns">
+            <!-- contents -->
             <!-- Card 1 -->
-            <div class="card-image">
-                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-            </div>
-            <div class="card-header">
-                <div class="card-title h5">Microsoft</div>
-                <div class="card-subtitle text-gray">Software and hardware</div>
-            </div>
-            <div class="card-body">
-                Empower every person and every organization on the planet to achieve more.
-            </div>
-
-            <!-- Card 2 -->
-            <div class="card-image">
-                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-            </div>
-            <div class="card-header">
-                <div class="card-title h5">Microsoft</div>
-                <div class="card-subtitle text-gray">Software and hardware</div>
-            </div>
-            <div class="card-body">
-                Empower every person and every organization on the planet to achieve more.
+            <!-- THERE NEEDS TO BE A DIV WRAPPING THE ENTIRE IMAGE, TITLE AND TEXT, (WITH A CLASS OF RECIPEITEM1 [and RECIPEITEM2, ETC.]) TO ALLOW FOR THE API RETURN TO BE PUT IN THERE-->
+            <!--This will also allow the on.click function to attach to a class name-->
+            <!--Needs a functionality to append any new images along the bottom and maintain the column spacing. Possibly using a for-loop ++ for each recipechoice (class) that the user has selected-->
+            <div class="card-image recipeitem1 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename1 col-4">
+                        <h2>Microsoft</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink1">
+                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
+                </div>
+                <img src="assets\img\img1.jpg" height="400px" width="400px" class="img-responsive">
             </div>
 
-            <!-- Card 3 -->
-            <div class="card-image">
-                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
+            <div class="card-image recipeitem2 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename2 col-4">
+                        <h2>Microsoft</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink2">
+                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
+                </div>
+                <img src="assets\img\img2.jpg" height="400px" width="400px" class="img-responsive">
             </div>
-            <div class="card-header">
-                <div class="card-title h5">Microsoft</div>
-                <div class="card-subtitle text-gray">Software and hardware</div>
-            </div>
-            <div class="card-body">
-                Empower every person and every organization on the planet to achieve more.
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card-image">
-                <img src="assets\img\stock-api-img.jpg" class="img-responsive">
-            </div>
-            <div class="card-header">
-                <div class="card-title h5">Microsoft</div>
-                <div class="card-subtitle text-gray">Software and hardware</div>
-            </div>
-            <div class="card-body">
-                Empower every person and every organization on the planet to achieve more.
+            <div class="card-image recipeitem3 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename3 col-4">
+                        <h2>Microsoft</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink3">
+                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
+                </div>
+                <img src="assets\img\img3.jpg" height="400px" width="400px" class="img-responsive">
             </div>
         </div>
+        <br>
+        <br>
+        <div class="columns">
+            <!-- Second Row -->
+            <div class="card-image recipeitem4 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename4 col-4">
+                        <h2>Microsoft</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink4">
+                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
+                </div>
+                <img src="assets\img\img4.jpg" height="400px" width="400px" class="img-responsive">
+            </div>
+            <div class="card-image recipeitem5 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename5 col-4">
+                        <h2>Microsoft</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink5">
+                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
+                </div>
+                <img src="assets\img\img5.jpg" height="400px" width="400px" class="img-responsive">
+            </div>
+            <div class="card-image recipeitem6 col-4">
+                <div class="card-header">
+                    <div class="card-title h5 recipename6 col-4">
+                        <h2>Microsoft</h2>
+                    </div>
+                </div>
+                <div class="card-body recipelink6">
+                    THIS IS WHERE THE LINK TO THE RECIPE WILL GO
+                </div>
+                <img src="assets\img\img6.jpg" height="400px" width="400px" class="img-responsive">
+            </div>
+        </div>
+        <br>
     </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
 
 
     <!-- Button to create the Shopping List -->
+    <center>
     <div class="popover col-5">
-        <button id="getRecipes" class="btn btn-primary col-5">Create Grocery List</button>
+        <button id="getRecipes" class="btn btn-success col-5">Create Grocery List</button>
         <div class="popover-container">
             <div class="card">
                 <div class="card-header">
@@ -106,9 +148,7 @@
             </div>
         </div>
     </div>
-
-
-
+    </center>
 
 
 
@@ -129,20 +169,25 @@
 
 </br>
 </br>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-copyright">
-          <div class="container">
-            © 2018 UCF Coding Bootcamp | <a href="https://github.com/B-Helgeson">Brandon Helgeson</a> | <a href="https://github.com/csthewriter">Christopher Stanley</a> | <a href="https://github.com/tomnite">Thomas Knight</a> | <a href="https://github.com/jahinzmann">Jeff Hinzmann</a>
-          </div>
+<!-- Footer -->
+<footer>
+    <div class="footer-copyright">
+        <div class="container">
+            <center> © 2018 UCF Coding Bootcamp |
+                <a href="https://github.com/B-Helgeson">Brandon Helgeson</a> |
+                <a href="https://github.com/csthewriter">Christopher Stanley</a> |
+                <a href="https://github.com/tomnite">Thomas Knight</a> |
+                <a href="https://github.com/jahinzmann">Jeff Hinzmann</a>
+            </center>
         </div>
-      </footer>
+    </div>
+</footer>
 
 
 
-    <!-- Linking to JQuery CDN -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Custom JavaScript File -->
-    <script src="assets/js/script.js"></script>
+<!-- Linking to JQuery CDN -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Custom JavaScript File -->
+<script src="assets/js/script.js"></script>
+
 </html>
-
