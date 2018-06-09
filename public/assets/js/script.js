@@ -93,6 +93,34 @@ $("#getRecipes").on("click", function() {
 });
 
 
+$(".toast").on("click", function() {
+  $(this).remove();
+})
+
+$("#additembtn").on("click", function() {
+  var ingInput = $("#addIng").val();
+  console.log(ingInput)
+
+  var addIngDiv = $("<div>"); //Creates the div for the ingredient
+  addIngDiv.addClass("toast groceryitem");
+
+  var addIngContent = $("<button>"); //Creates the div for the "card image"
+  addIngContent.addClass("btn btn-clear float-right"); 
+  addIngContent.append(ingInput);
+  addIngDiv.append(addIngContent);
+
+  console.log(addIngDiv)
+
+  $("ingredList").append(addIngDiv);
+
+})
+
+/* <div class="toast groceryitem" id="ing1">
+  <button class="btn btn-clear float-right"></button>
+  Eggs
+</div> */
+
+
 // =================================================================================
 //Attempt to replicate the above API call internally
 
