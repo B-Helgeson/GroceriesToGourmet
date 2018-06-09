@@ -53,32 +53,34 @@
                 <div class="panel-body">
                     <!--A series of divs to create items that can be deleted-->
                     <!--Needs a functionality to clear the buttons after the button is clicked using groceryitem class-->
-                    <div class="toast groceryitem">
-                        <button class="btn btn-clear float-right"></button>
-                        Eggs
-                    </div>
-                    <div class="toast groceryitem">
-                        <button class="btn btn-clear float-right"></button>
-                        Milk
-                    </div>
-                    <div class="toast groceryitem">
-                        <button class="btn btn-clear float-right"></button>
-                        Bread
-                    </div>
-                    <div class="toast groceryitem">
-                        <button class="btn btn-clear float-right"></button>
-                        Apples
-                    </div>
-                    <div class="toast groceryitem">
-                        <button class="btn btn-clear float-right"></button>
-                        Sugar
+                    <div id="ingredList">
+                        <div class="toast groceryitem" id="ing1">
+                            <button class="btn btn-clear float-right"></button>
+                            Eggs
+                        </div>
+                        <div class="toast groceryitem" id="ing2">
+                            <button class="btn btn-clear float-right"></button>
+                            Milk
+                        </div>
+                        <div class="toast groceryitem" id="ing3">
+                            <button class="btn btn-clear float-right"></button>
+                            Bread
+                        </div>
+                        <div class="toast groceryitem" id="ing4">
+                            <button class="btn btn-clear float-right"></button>
+                            Apples
+                        </div>
+                        <div class="toast groceryitem" id="ing5">
+                            <button class="btn btn-clear float-right"></button>
+                            Sugar
+                        </div>
                     </div>
                     <br>
                     <br>
                     <!--Funtionality to append item to the bottom of the list using additem class-->
                     <div class="input-group">
-                        <input type="text" class="form-input">
-                        <button class="btn btn-success input-group-btn additem">Add Item to List</button>
+                        <input type="text" class="form-input" id="addIng" placeholder="new ingredient">
+                        <button class="btn btn-success input-group-btn" id="additembtn">Add Item to List</button>
                     </div>
                 </div>
             </div>
