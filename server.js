@@ -31,9 +31,9 @@ const   express = require("express"),
 // app.set('view engine', '.hbs');
 // starts the Sequelize server 
         db.sequelize
-        .query('SET FOREIGN_KEY_CHECKS = 0', null, {raw: true}) // These four lines:   1
-        .then(function(results) { // Are being used to drop then rebuild the database  2
-        db.sequelize.sync({force: true}) // Because of updated table structure         3
-        }) // Comment these lines out later, then comment in the line below            4
-        // .sync( { force: false} ) //Comment this back in to retain data!
+        // .query('SET FOREIGN_KEY_CHECKS = 0', null, {raw: true}) // These four lines:   1
+        // .then(function(results) { // Are being used to drop then rebuild the database  2
+        // db.sequelize.sync({force: true}) // Because of updated table structure         3
+        // }) // Comment these lines out later, then comment in the line below            4
+        .sync( { force: false} ) //Comment this back in to retain data!
         .then(() => app.listen(PORT,() => console.log("App listening on PORT " + PORT )))
