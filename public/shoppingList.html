@@ -21,13 +21,16 @@
             <!-- <img class="hero-image"src="assets\img\background.jpg" alt="Groceries"> -->
             <div class="navbar">
                 <section class="navbar-section">
-                    <a href="#" class="btn btn-success btn-lg">Recipes</a>
-                    <a href="#" class="btn btn-success btn-lg">Grocery Lists</a>
-                    <a href="/home.html" class="btn btn-success btn-lg">User Account</a>
+                    <div class="pages">
+                        <a href="#" class="btn btn-success btn-lg">Recipes</a>
+                        <a href="#" class="btn btn-success btn-lg">Grocery Lists</a>
+                    </div>
                 </section>
                 <section class="navbar-section">
                     <div class="account">
-                        <a href="#" class="btn btn-success btn-lg"> Logout</a>
+                        <a href="/home.html" class="btn btn-success btn-lg">User Account</a>
+                        <a href="#" class="btn btn-success btn-lg">Logout</a>
+
                     </div>
                 </section>
             </div>
@@ -36,6 +39,17 @@
 
 
 
+    <!--Creating a div for the parsed recipes and ingredients-->
+    <div class="container">
+        <div class="columns">
+            <!--Panel for the grocery list-->
+            <div class="panel grocerylist col-6">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <h3>Grocery List</h3>
+                    </div>
+
+<!-- Chris removed from below this comment -->
 
         <div class="shoppingList">
             <h1>My Shopping List</h1>
@@ -101,16 +115,78 @@
                 <div class="card-body" id="recipeCall"> 
                     <!-- Recipe dynamically replaces content, but loading is default (before API replies) -->
                     <div class="loading loading-lg"></div>
+                  
+<!-- Chris removed from above this comment -->
+                  
                 </div>
-                <div class="card-footer">
-                  Recipe Instructions Go Here
+                <div class="panel-body">
+                    <!--A series of divs to create items that can be deleted-->
+                    <!--Needs a functionality to clear the buttons after the button is clicked using groceryitem class-->
+                    <div class="toast groceryitem">
+                        <button class="btn btn-clear float-right"></button>
+                        Ingredient 1
+                    </div>
+                    <div class="toast groceryitem">
+                        <button class="btn btn-clear float-right"></button>
+                        Ingredient 2
+                    </div>
+                    <div class="toast groceryitem">
+                        <button class="btn btn-clear float-right"></button>
+                        Ingredient 3
+                    </div>
+                    <div class="toast groceryitem">
+                        <button class="btn btn-clear float-right"></button>
+                        Ingredient 4
+                    </div>
+                    <br>
+                    <br>
+                    <!--Funtionality to append item to the bottom of the list using additem class-->
+                    <div class="input-group">
+                        <input type="text" class="form-input">
+                        <button class="btn btn-success input-group-btn additem">Add Item to List</button>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
 
 
-
+            <div class="panel recipechoices col-6">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <h3>Recipes</h3>
+                    </div>
+                </div>
+                <div class="panel-body container">
+                    <div class="columns">
+                        <!-- contents -->
+                        <!--Needs a functionality to append any new images along the bottom and maintain the column spacing. Possibly using a for-loop ++ for each recipechoice (class) that the user has selected-->
+                        <div class="card-image recipechoice col-4">
+                            <img src="assets\img\img1.jpg" height="200px" width="200px" class="img-responsive">
+                        </div>
+                        <div class="card-image recipechoice col-4">
+                            <img src="assets\img\img2.jpg" height="200px" width="200px" class="img-responsive">
+                        </div>
+                        <div class="card-image recipechoice col-4">
+                            <img src="assets\img\img3.jpg" height="200px" width="200px" class="img-responsive">
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="columns">
+                        <!-- Second Row -->
+                        <div class="card-image recipechoice col-4">
+                            <img src="assets\img\img4.jpg" height="200px" width="200px" class="img-responsive">
+                        </div>
+                        <div class="card-image recipechoice col-4">
+                            <img src="assets\img\img5.jpg" height="200px" width="200px" class="img-responsive">
+                        </div>
+                        <div class="card-image recipechoice col-4">
+                            <img src="assets\img\img6.jpg" height="200px" width="200px" class="img-responsive">
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -120,20 +196,25 @@
 
 </br>
 </br>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-copyright">
-          <div class="container">
-            © 2018 UCF Coding Bootcamp | <a href="https://github.com/B-Helgeson">Brandon Helgeson</a> | <a href="https://github.com/csthewriter">Christopher Stanley</a> | <a href="https://github.com/tomnite">Thomas Knight</a> | <a href="https://github.com/jahinzmann">Jeff Hinzmann</a>
-          </div>
+<!-- Footer -->
+<footer>
+    <div class="footer-copyright">
+        <div class="container">
+            <center>© 2018 UCF Coding Bootcamp |
+                <a href="https://github.com/B-Helgeson">Brandon Helgeson</a> |
+                <a href="https://github.com/csthewriter">Christopher Stanley</a> |
+                <a href="https://github.com/tomnite">Thomas Knight</a> |
+                <a href="https://github.com/jahinzmann">Jeff Hinzmann</a>
+            </center>
         </div>
-      </footer>
+    </div>
+</footer>
 
 
-        <!-- Linking to JQuery CDN -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <!-- Custom JavaScript File -->
-        <script src="assets/js/script.js"></script>
+<!-- Linking to JQuery CDN -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Custom JavaScript File -->
+<script src="assets/js/script.js"></script>
 
 </html>
 

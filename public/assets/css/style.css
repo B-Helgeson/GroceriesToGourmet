@@ -105,3 +105,8 @@
             padding: 25px;
         }
         */
+
+        .recipes {
+            float: right;
+            width: 50%;
+        }
