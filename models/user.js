@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       type: Sequelize.INTEGER
     },
-
+ 
     firstname: {
         type: Sequelize.STRING,
         notEmpty: true
@@ -45,12 +45,6 @@ module.exports = function(sequelize, DataTypes) {
       onDelete: "cascade"
     });
   };
-
-//   user.associate = function(models) {
-//       user.hasMany(modes.shopping_list, {
-//     onDelete: "cascade"
-//       })
-//   }
 
   return users;
 };

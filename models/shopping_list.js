@@ -7,21 +7,32 @@ module.exports = function(sequelize, DataTypes) {
       type: Sequelize.STRING
     },
     shopping_list_id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV1,
+      type: Sequelize.INTEGER,
+      autoIncrement: true,
       primaryKey: true
     }
   });
-
+ 
   shopping_lists.associate = function(models) {
     // A shopping list belongs to a user, and they can have many
     shopping_lists.belongsTo(models.users, {
       foreignKey: {
         allowNull: false
       }
-    });
-
+    })
   };
+
+  shopping_lists.associate = function(models) {
+    shopping_lists.hasMany(models.saved_items, {
+      onDelete: "cascade"
+    });
+  };
+
+  // shopping_lists.associate = function(models) {
+  //     shopping_lists.hasMany(models.saved_ingredients, {
+  //       onDelete: "cascade"
+  //     });
+  // };
 
   return shopping_lists;
 };

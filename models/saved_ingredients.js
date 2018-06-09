@@ -7,20 +7,23 @@ module.exports = function(sequelize, DataTypes) {
         type: Sequelize.STRING
       },
       purchased: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
+        defaultValue: true,
       },
       ingredient_id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV1,
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
         primaryKey: true
       }
     });
   
-    saved_ingredients.associate = function(models) {
-      saved_ingredients.belongsTo(models.shopping_lists, {
-        foreignKey: 'ingredient_id'
-      });
-    };
-  
+    // saved_ingredients.associate = function(models) {
+    //   saved_ingredients.belongsTo(models.shopping_lists, {
+    //     foreignKey: {
+    //       allowNull: false
+    //     }
+    //   });
+    // };
+   
     return saved_ingredients;
   };
